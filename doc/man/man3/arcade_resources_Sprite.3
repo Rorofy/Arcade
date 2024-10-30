@@ -1,0 +1,77 @@
+.TH "arcade::resources::Sprite" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arcade::resources::Sprite \- the \fBSprite\fP structure can be used to represent a sprite on the screen  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sprite\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBTermDisplay\fP { \fBCHARACTER\fP, \fBPIXEL\fP }"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBarcade::Coords\fP< double > \fBcoords\fP"
+.br
+.ti -1c
+.RI "\fBarcade::Coords\fP< int > \fBtermCoords\fP"
+.br
+.ti -1c
+.RI "\fBSprite::TermDisplay\fP \fBtermDisplay\fP"
+.br
+.ti -1c
+.RI "std::uint32_t \fBtermChar\fP"
+.br
+.ti -1c
+.RI "\fBarcade::resources::Color\fP \fBtermColor\fP"
+.br
+.ti -1c
+.RI "\fBarcade::Rect\fP< double > \fBspriteArea\fP"
+.br
+.ti -1c
+.RI "std::string \fBspritePath\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBSprite\fP structure can be used to represent a sprite on the screen 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBarcade::resources::Sprite::TermDisplay\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fICHARACTER \fP\fP
+.TP
+\fB\fIPIXEL \fP\fP
+.SH "Member Data Documentation"
+.PP 
+.SS "arcade::resources::Sprite::coords"
+The coords member refers to the coordinates on window 
+.SS "arcade::resources::Sprite::spriteArea"
+the spriteArea member refers to a rectangle of double that defines the sprite area 
+.SS "arcade::resources::Sprite::spritePath"
+the spritePath member refers to the path to the sprite (useful with in windowed mode) 
+.SS "arcade::resources::Sprite::termChar"
+The termchar member refers to the character to print in the terminal 
+.SS "arcade::resources::Sprite::termColor"
+The termColor member refers to a colors to represent the sprite inside the terminal 
+.SS "arcade::resources::Sprite::termCoords"
+The termCoords member refers to coordinates inside terminal 
+.SS "arcade::resources::Sprite::termDisplay"
+The termCoords member refers to the display mode 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

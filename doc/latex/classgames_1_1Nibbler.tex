@@ -1,0 +1,101 @@
+\hypertarget{classgames_1_1Nibbler}{}\doxysection{games\+::Nibbler Class Reference}
+\label{classgames_1_1Nibbler}\index{games::Nibbler@{games::Nibbler}}
+
+
+The \mbox{\hyperlink{classgames_1_1Nibbler}{Nibbler}} class is the IGame implementation for \mbox{\hyperlink{classgames_1_1Nibbler}{Nibbler}} game.  
+
+
+
+
+{\ttfamily \#include $<$Nibbler.\+hpp$>$}
+
+
+
+Inheritance diagram for games\+::Nibbler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classgames_1_1Nibbler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for games\+::Nibbler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classgames_1_1Nibbler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgames_1_1Nibbler_a52af26b33c0b26d40606ca9bd921cd66}{Nibbler}} (const std\+::string \&username)
+\item 
+\mbox{\hyperlink{classgames_1_1Nibbler_a74dcf57db6fb2e2c4b29ebd455d40de1}{$\sim$\+Nibbler}} ()=default
+\item 
+void \mbox{\hyperlink{classgames_1_1Nibbler_ae6bd71c54d48b013da2dde0a91f60ad7}{tick}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events, \mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt) override
+\item 
+void \mbox{\hyperlink{classgames_1_1Nibbler_a6afcf67cdedca11bcd08ec2e652cc672}{prepare\+Rendering}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&render\+Queues) const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classgames_1_1Nibbler}{Nibbler}} class is the IGame implementation for \mbox{\hyperlink{classgames_1_1Nibbler}{Nibbler}} game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgames_1_1Nibbler_a52af26b33c0b26d40606ca9bd921cd66}\label{classgames_1_1Nibbler_a52af26b33c0b26d40606ca9bd921cd66}} 
+\index{games::Nibbler@{games::Nibbler}!Nibbler@{Nibbler}}
+\index{Nibbler@{Nibbler}!games::Nibbler@{games::Nibbler}}
+\doxysubsubsection{\texorpdfstring{Nibbler()}{Nibbler()}}
+{\footnotesize\ttfamily games\+::\+Nibbler\+::\+Nibbler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classgames_1_1Nibbler_a74dcf57db6fb2e2c4b29ebd455d40de1}\label{classgames_1_1Nibbler_a74dcf57db6fb2e2c4b29ebd455d40de1}} 
+\index{games::Nibbler@{games::Nibbler}!````~Nibbler@{$\sim$Nibbler}}
+\index{````~Nibbler@{$\sim$Nibbler}!games::Nibbler@{games::Nibbler}}
+\doxysubsubsection{\texorpdfstring{$\sim$Nibbler()}{~Nibbler()}}
+{\footnotesize\ttfamily games\+::\+Nibbler\+::$\sim$\+Nibbler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgames_1_1Nibbler_a6afcf67cdedca11bcd08ec2e652cc672}\label{classgames_1_1Nibbler_a6afcf67cdedca11bcd08ec2e652cc672}} 
+\index{games::Nibbler@{games::Nibbler}!prepareRendering@{prepareRendering}}
+\index{prepareRendering@{prepareRendering}!games::Nibbler@{games::Nibbler}}
+\doxysubsubsection{\texorpdfstring{prepareRendering()}{prepareRendering()}}
+{\footnotesize\ttfamily void games\+::\+Nibbler\+::prepare\+Rendering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{render\+Queues }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+prepare\+Rendering is a method that will be called every time the game must be rendered 
+\begin{DoxyParams}{Parameters}
+{\em render\+Queues} & render\+Queues refers to a Display\+Protocol that must be filled with data to display on screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}{interfaces\+::\+IGame}}.
+
+\mbox{\Hypertarget{classgames_1_1Nibbler_ae6bd71c54d48b013da2dde0a91f60ad7}\label{classgames_1_1Nibbler_ae6bd71c54d48b013da2dde0a91f60ad7}} 
+\index{games::Nibbler@{games::Nibbler}!tick@{tick}}
+\index{tick@{tick}!games::Nibbler@{games::Nibbler}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void games\+::\+Nibbler\+::tick (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events,  }\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+tick is a method that will be called everytime the game logic must be ran 
+\begin{DoxyParams}{Parameters}
+{\em events} & the events param refers to a queue filled with all events captured since last call \\
+\hline
+{\em dt} & The dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}{interfaces\+::\+IGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+games/nibbler/include/\mbox{\hyperlink{Nibbler_8hpp}{Nibbler.\+hpp}}\item 
+games/nibbler/src/\mbox{\hyperlink{Nibbler_8cpp}{Nibbler.\+cpp}}\end{DoxyCompactItemize}

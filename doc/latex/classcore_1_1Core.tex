@@ -1,0 +1,143 @@
+\hypertarget{classcore_1_1Core}{}\doxysection{core\+::Core Class Reference}
+\label{classcore_1_1Core}\index{core::Core@{core::Core}}
+
+
+{\ttfamily \#include $<$Core.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1Core_a9b793db4912ecc6994d971c93972d5c7}{Core}} (const std\+::string \&base\+\_\+lib)
+\item 
+\mbox{\hyperlink{classcore_1_1Core_ae4f2c687842ddf654d802c5cd15242cc}{$\sim$\+Core}} ()
+\item 
+void \mbox{\hyperlink{classcore_1_1Core_a900020d512cbe2e30d2f934565336618}{update\+Available\+Libs}} ()
+\begin{DoxyCompactList}\small\item\em The update\+Available\+Libs method is a method that will update both game and graphical available libraries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1Core_a0a35adc7e7e76b85ee5530196eb1c800}{update\+Available\+Graphical\+Libs}} ()
+\begin{DoxyCompactList}\small\item\em The update\+Available\+Graphical\+Libs method is a method that will update available graphical libraries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1Core_a64a693bd536b4a24e99494549f99f020}{update\+Available\+Game\+Libs}} ()
+\begin{DoxyCompactList}\small\item\em The update\+Available\+Game\+Libs method is a method that will update available game libraries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1Core_a49665f91dd82ac56a98b5675fdce8be3}{set\+Graphical\+Lib}} (std\+::uint64\+\_\+t lib\+\_\+number)
+\begin{DoxyCompactList}\small\item\em The set\+Graphical\+Lib method is a method that will switch the graphical library to the one with the given number (index of a lib in the available\+Graphical\+Libs). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1Core_a6c87fd6e7814b2931caa4c0efc60773d}{set\+Game\+Lib}} (std\+::uint64\+\_\+t lib\+\_\+number)
+\begin{DoxyCompactList}\small\item\em The set\+Graphical\+Lib method is a method that will switch the game library to the one with the given number (index of a lib in the available\+Game\+Libs). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcore_1_1Core_a60bd6813655e2c4a0e053184444ef4cf}{loop}} ()
+\begin{DoxyCompactList}\small\item\em The loop method is the arcade project main loop. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classcore_1_1Core_a94c83da95ff96892723a97fa03beea25}{get\+Available\+Game\+Libs}} () const
+\begin{DoxyCompactList}\small\item\em Getter for available game libs. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classcore_1_1Core_adc36cdad0034b590f88b4f8d3193b8f2}{get\+Available\+Graphics\+Libs}} () const
+\begin{DoxyCompactList}\small\item\em Getter for available graphics libs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1Core_a9b793db4912ecc6994d971c93972d5c7}\label{classcore_1_1Core_a9b793db4912ecc6994d971c93972d5c7}} 
+\index{core::Core@{core::Core}!Core@{Core}}
+\index{Core@{Core}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{Core()}{Core()}}
+{\footnotesize\ttfamily core\+::\+Core\+::\+Core (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{base\+\_\+lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classcore_1_1Core_ae4f2c687842ddf654d802c5cd15242cc}\label{classcore_1_1Core_ae4f2c687842ddf654d802c5cd15242cc}} 
+\index{core::Core@{core::Core}!````~Core@{$\sim$Core}}
+\index{````~Core@{$\sim$Core}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{$\sim$Core()}{~Core()}}
+{\footnotesize\ttfamily core\+::\+Core\+::$\sim$\+Core (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1Core_a94c83da95ff96892723a97fa03beea25}\label{classcore_1_1Core_a94c83da95ff96892723a97fa03beea25}} 
+\index{core::Core@{core::Core}!getAvailableGameLibs@{getAvailableGameLibs}}
+\index{getAvailableGameLibs@{getAvailableGameLibs}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{getAvailableGameLibs()}{getAvailableGameLibs()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$\& core\+::\+Core\+::get\+Available\+Game\+Libs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for available game libs. 
+
+\mbox{\Hypertarget{classcore_1_1Core_adc36cdad0034b590f88b4f8d3193b8f2}\label{classcore_1_1Core_adc36cdad0034b590f88b4f8d3193b8f2}} 
+\index{core::Core@{core::Core}!getAvailableGraphicsLibs@{getAvailableGraphicsLibs}}
+\index{getAvailableGraphicsLibs@{getAvailableGraphicsLibs}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{getAvailableGraphicsLibs()}{getAvailableGraphicsLibs()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$\& core\+::\+Core\+::get\+Available\+Graphics\+Libs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for available graphics libs. 
+
+\mbox{\Hypertarget{classcore_1_1Core_a60bd6813655e2c4a0e053184444ef4cf}\label{classcore_1_1Core_a60bd6813655e2c4a0e053184444ef4cf}} 
+\index{core::Core@{core::Core}!loop@{loop}}
+\index{loop@{loop}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The loop method is the arcade project main loop. 
+
+\mbox{\Hypertarget{classcore_1_1Core_a6c87fd6e7814b2931caa4c0efc60773d}\label{classcore_1_1Core_a6c87fd6e7814b2931caa4c0efc60773d}} 
+\index{core::Core@{core::Core}!setGameLib@{setGameLib}}
+\index{setGameLib@{setGameLib}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{setGameLib()}{setGameLib()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::set\+Game\+Lib (\begin{DoxyParamCaption}\item[{std\+::uint64\+\_\+t}]{lib\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+The set\+Graphical\+Lib method is a method that will switch the game library to the one with the given number (index of a lib in the available\+Game\+Libs). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1Core_a49665f91dd82ac56a98b5675fdce8be3}\label{classcore_1_1Core_a49665f91dd82ac56a98b5675fdce8be3}} 
+\index{core::Core@{core::Core}!setGraphicalLib@{setGraphicalLib}}
+\index{setGraphicalLib@{setGraphicalLib}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{setGraphicalLib()}{setGraphicalLib()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::set\+Graphical\+Lib (\begin{DoxyParamCaption}\item[{std\+::uint64\+\_\+t}]{lib\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+The set\+Graphical\+Lib method is a method that will switch the graphical library to the one with the given number (index of a lib in the available\+Graphical\+Libs). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lib\+\_\+number} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcore_1_1Core_a64a693bd536b4a24e99494549f99f020}\label{classcore_1_1Core_a64a693bd536b4a24e99494549f99f020}} 
+\index{core::Core@{core::Core}!updateAvailableGameLibs@{updateAvailableGameLibs}}
+\index{updateAvailableGameLibs@{updateAvailableGameLibs}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{updateAvailableGameLibs()}{updateAvailableGameLibs()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::update\+Available\+Game\+Libs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The update\+Available\+Game\+Libs method is a method that will update available game libraries. 
+
+\mbox{\Hypertarget{classcore_1_1Core_a0a35adc7e7e76b85ee5530196eb1c800}\label{classcore_1_1Core_a0a35adc7e7e76b85ee5530196eb1c800}} 
+\index{core::Core@{core::Core}!updateAvailableGraphicalLibs@{updateAvailableGraphicalLibs}}
+\index{updateAvailableGraphicalLibs@{updateAvailableGraphicalLibs}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{updateAvailableGraphicalLibs()}{updateAvailableGraphicalLibs()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::update\+Available\+Graphical\+Libs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The update\+Available\+Graphical\+Libs method is a method that will update available graphical libraries. 
+
+\mbox{\Hypertarget{classcore_1_1Core_a900020d512cbe2e30d2f934565336618}\label{classcore_1_1Core_a900020d512cbe2e30d2f934565336618}} 
+\index{core::Core@{core::Core}!updateAvailableLibs@{updateAvailableLibs}}
+\index{updateAvailableLibs@{updateAvailableLibs}!core::Core@{core::Core}}
+\doxysubsubsection{\texorpdfstring{updateAvailableLibs()}{updateAvailableLibs()}}
+{\footnotesize\ttfamily void core\+::\+Core\+::update\+Available\+Libs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The update\+Available\+Libs method is a method that will update both game and graphical available libraries. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/\mbox{\hyperlink{Core_8hpp}{Core.\+hpp}}\item 
+core/src/\mbox{\hyperlink{Core_8cpp}{Core.\+cpp}}\end{DoxyCompactItemize}

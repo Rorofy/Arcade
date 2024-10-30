@@ -1,0 +1,50 @@
+.TH "include/Common.hpp" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/Common.hpp
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBarcade::Coords< T >\fP"
+.br
+.RI "This structure can be used to represent 2D coordinates\&. "
+.ti -1c
+.RI "struct \fBarcade::Rect< T >\fP"
+.br
+.RI "this struct can be used to represent a rectangle "
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBArcade\fP"
+.br
+.RI "The \fBArcade\fP namespace contains all \fBArcade\fP code\&. "
+.ti -1c
+.RI " \fBarcade\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "using \fBarcade::Time\fP = double"
+.br
+.RI "The Time type refers to a double that will be used to calculate an element position relative to time\&. "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBarcade::InterfaceType\fP { \fBarcade::IGame\fP, \fBarcade::IGraphical\fP }"
+.br
+.RI "The InterfaceType enum contains all interfaces name (will be used with dlsym to know which interface we are using) "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

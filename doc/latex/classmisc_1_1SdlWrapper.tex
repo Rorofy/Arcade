@@ -1,0 +1,287 @@
+\hypertarget{classmisc_1_1SdlWrapper}{}\doxysection{misc\+::Sdl\+Wrapper Class Reference}
+\label{classmisc_1_1SdlWrapper}\index{misc::SdlWrapper@{misc::SdlWrapper}}
+
+
+the \mbox{\hyperlink{classmisc_1_1SdlWrapper}{Sdl\+Wrapper}} class is an encapsulation of the lib ncurses  
+
+
+
+
+{\ttfamily \#include $<$Sdl\+Wrapper.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmisc_1_1SdlWrapper_a644ec36c007308a6e4a4b57c77084785}{Sdl\+Wrapper}} ()
+\item 
+\mbox{\hyperlink{classmisc_1_1SdlWrapper_a243a46c1a757176997d737fe8425c94c}{$\sim$\+Sdl\+Wrapper}} ()
+\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a26dc921a213317054f4bafa92792f40d}{set\+Surface}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em the set\+Surface method is a method that sets the private \+\_\+surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a558edc97ce6a93f0c8c1a7429053a8a3}{set\+Text\+Surface}} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em the set\+Text\+Surface method is a method that sets the private \+\_\+text\+Surface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a84bc504f9bb0deafc5aac032837d6720}{set\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em the set\+Texture method is a method that sets the private \+\_\+texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_aa10209f4167f13c2ea42a47b5085e6d9}{set\+Text\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em the set\+Text\+Texture method is a method that sets the private \+\_\+text\+Texture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a31e7047bf4126859ce720cac55b57ff4}{set\+Font}} (const char $\ast$path, std\+::uint32\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em the set\+Font method is a method that sets the private \+\_\+font \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_af07a606020e02f0287159b8c089e8038}{set\+Src\+Rect}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em the set\+Src\+Rect method is a method that sets the private \+\_\+src\+Rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a685c87522b7c76b1489ce23c48cc3039}{set\+Dst\+Rect}} (int x, int y, int w, int h)
+\begin{DoxyCompactList}\small\item\em the set\+Src\+Rect method is a method that sets the private \+\_\+dst\+Rect \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a13f79e4a5084d38254aca1eb9473a01f}{set\+Color}} (std\+::uint8\+\_\+t r, std\+::uint8\+\_\+t g, std\+::uint8\+\_\+t b, std\+::uint8\+\_\+t o)
+\begin{DoxyCompactList}\small\item\em the set\+Color method is a method that sets the private \+\_\+color \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_abf59b1438434587272d4e5b0c07e4453}{query\+Texture}} (int $\ast$texW, int $\ast$texH)
+\begin{DoxyCompactList}\small\item\em the query\+Texture method is a method that call the query\+Texture function from SDL \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_abad1f139b55c807004c77e67757943ce}{sprite\+Render}} ()
+\begin{DoxyCompactList}\small\item\em the sprite\+Render method is a method that render the sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_aea5529ffdc358c8b61c09d0404d457c3}{text\+Render}} ()
+\begin{DoxyCompactList}\small\item\em the text\+Render method is a method that render the texts \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_a66bbbd1c9bf52886ee7b1e24e71b60c4}{clear}} ()
+\begin{DoxyCompactList}\small\item\em the clear method is a method that clear everything that is displayed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_aeb3677c15c367ed5dfb3aee6435b9e1f}{display}} ()
+\begin{DoxyCompactList}\small\item\em the display method is a method that display everything rendered \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1SdlWrapper_ae53cc97ca505343776388e907839b8b0}{get\+Events}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events)
+\begin{DoxyCompactList}\small\item\em the get\+Events method is a method that get the events from the game \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classmisc_1_1SdlWrapper_aa9ee98bdcc4f2926314f1bbdff24c3d3}{get\+Text\+Surface}} ()
+\begin{DoxyCompactList}\small\item\em the get\+Text\+Surface method is a method that returns the private variable \+\_\+text\+Surface \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the \mbox{\hyperlink{classmisc_1_1SdlWrapper}{Sdl\+Wrapper}} class is an encapsulation of the lib ncurses 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a644ec36c007308a6e4a4b57c77084785}\label{classmisc_1_1SdlWrapper_a644ec36c007308a6e4a4b57c77084785}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!SdlWrapper@{SdlWrapper}}
+\index{SdlWrapper@{SdlWrapper}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{SdlWrapper()}{SdlWrapper()}}
+{\footnotesize\ttfamily misc\+::\+Sdl\+Wrapper\+::\+Sdl\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a243a46c1a757176997d737fe8425c94c}\label{classmisc_1_1SdlWrapper_a243a46c1a757176997d737fe8425c94c}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!````~SdlWrapper@{$\sim$SdlWrapper}}
+\index{````~SdlWrapper@{$\sim$SdlWrapper}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{$\sim$SdlWrapper()}{~SdlWrapper()}}
+{\footnotesize\ttfamily misc\+::\+Sdl\+Wrapper\+::$\sim$\+Sdl\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a66bbbd1c9bf52886ee7b1e24e71b60c4}\label{classmisc_1_1SdlWrapper_a66bbbd1c9bf52886ee7b1e24e71b60c4}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!clear@{clear}}
+\index{clear@{clear}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the clear method is a method that clear everything that is displayed 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_aeb3677c15c367ed5dfb3aee6435b9e1f}\label{classmisc_1_1SdlWrapper_aeb3677c15c367ed5dfb3aee6435b9e1f}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!display@{display}}
+\index{display@{display}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the display method is a method that display everything rendered 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_ae53cc97ca505343776388e907839b8b0}\label{classmisc_1_1SdlWrapper_ae53cc97ca505343776388e907839b8b0}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::get\+Events (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events }\end{DoxyParamCaption})}
+
+
+
+the get\+Events method is a method that get the events from the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em events} & events is a queue of events that are received \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_aa9ee98bdcc4f2926314f1bbdff24c3d3}\label{classmisc_1_1SdlWrapper_aa9ee98bdcc4f2926314f1bbdff24c3d3}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!getTextSurface@{getTextSurface}}
+\index{getTextSurface@{getTextSurface}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{getTextSurface()}{getTextSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ misc\+::\+Sdl\+Wrapper\+::get\+Text\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the get\+Text\+Surface method is a method that returns the private variable \+\_\+text\+Surface 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_abf59b1438434587272d4e5b0c07e4453}\label{classmisc_1_1SdlWrapper_abf59b1438434587272d4e5b0c07e4453}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!queryTexture@{queryTexture}}
+\index{queryTexture@{queryTexture}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{queryTexture()}{queryTexture()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::query\+Texture (\begin{DoxyParamCaption}\item[{int $\ast$}]{texW,  }\item[{int $\ast$}]{texH }\end{DoxyParamCaption})}
+
+
+
+the query\+Texture method is a method that call the query\+Texture function from SDL 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texW} & texW is the width of the texture \\
+\hline
+{\em texH} & texH is the height of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a13f79e4a5084d38254aca1eb9473a01f}\label{classmisc_1_1SdlWrapper_a13f79e4a5084d38254aca1eb9473a01f}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setColor@{setColor}}
+\index{setColor@{setColor}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Color (\begin{DoxyParamCaption}\item[{std\+::uint8\+\_\+t}]{r,  }\item[{std\+::uint8\+\_\+t}]{g,  }\item[{std\+::uint8\+\_\+t}]{b,  }\item[{std\+::uint8\+\_\+t}]{o }\end{DoxyParamCaption})}
+
+
+
+the set\+Color method is a method that sets the private \+\_\+color 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & r is the red component of the color \\
+\hline
+{\em g} & g is the green component of the color \\
+\hline
+{\em b} & b is the blue component of the color \\
+\hline
+{\em o} & o is the alpha component, the opacity of the color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a685c87522b7c76b1489ce23c48cc3039}\label{classmisc_1_1SdlWrapper_a685c87522b7c76b1489ce23c48cc3039}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setDstRect@{setDstRect}}
+\index{setDstRect@{setDstRect}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setDstRect()}{setDstRect()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Dst\+Rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+the set\+Src\+Rect method is a method that sets the private \+\_\+dst\+Rect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x is the abscissa of the top left of the rectangle \\
+\hline
+{\em y} & y is the ordinate of the top left of the rectangle \\
+\hline
+{\em w} & w is the width of the rectangle \\
+\hline
+{\em h} & h is the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a31e7047bf4126859ce720cac55b57ff4}\label{classmisc_1_1SdlWrapper_a31e7047bf4126859ce720cac55b57ff4}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setFont@{setFont}}
+\index{setFont@{setFont}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{std\+::uint32\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+the set\+Font method is a method that sets the private \+\_\+font 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path is the filepath to the font \\
+\hline
+{\em size} & size is the size of the characters that will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_af07a606020e02f0287159b8c089e8038}\label{classmisc_1_1SdlWrapper_af07a606020e02f0287159b8c089e8038}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setSrcRect@{setSrcRect}}
+\index{setSrcRect@{setSrcRect}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setSrcRect()}{setSrcRect()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Src\+Rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+the set\+Src\+Rect method is a method that sets the private \+\_\+src\+Rect 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x is the abscissa of the top left of the rectangle \\
+\hline
+{\em y} & y is the ordinate of the top left of the rectangle \\
+\hline
+{\em w} & w is the width of the rectangle \\
+\hline
+{\em h} & h is the height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a26dc921a213317054f4bafa92792f40d}\label{classmisc_1_1SdlWrapper_a26dc921a213317054f4bafa92792f40d}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setSurface@{setSurface}}
+\index{setSurface@{setSurface}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setSurface()}{setSurface()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Surface (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+the set\+Surface method is a method that sets the private \+\_\+surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path is the filepath of the sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a558edc97ce6a93f0c8c1a7429053a8a3}\label{classmisc_1_1SdlWrapper_a558edc97ce6a93f0c8c1a7429053a8a3}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setTextSurface@{setTextSurface}}
+\index{setTextSurface@{setTextSurface}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setTextSurface()}{setTextSurface()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Text\+Surface (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+the set\+Text\+Surface method is a method that sets the private \+\_\+text\+Surface 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & str is string of the text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_aa10209f4167f13c2ea42a47b5085e6d9}\label{classmisc_1_1SdlWrapper_aa10209f4167f13c2ea42a47b5085e6d9}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setTextTexture@{setTextTexture}}
+\index{setTextTexture@{setTextTexture}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setTextTexture()}{setTextTexture()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Text\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the set\+Text\+Texture method is a method that sets the private \+\_\+text\+Texture 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_a84bc504f9bb0deafc5aac032837d6720}\label{classmisc_1_1SdlWrapper_a84bc504f9bb0deafc5aac032837d6720}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::set\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the set\+Texture method is a method that sets the private \+\_\+texture 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_abad1f139b55c807004c77e67757943ce}\label{classmisc_1_1SdlWrapper_abad1f139b55c807004c77e67757943ce}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!spriteRender@{spriteRender}}
+\index{spriteRender@{spriteRender}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{spriteRender()}{spriteRender()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the sprite\+Render method is a method that render the sprites 
+
+\mbox{\Hypertarget{classmisc_1_1SdlWrapper_aea5529ffdc358c8b61c09d0404d457c3}\label{classmisc_1_1SdlWrapper_aea5529ffdc358c8b61c09d0404d457c3}} 
+\index{misc::SdlWrapper@{misc::SdlWrapper}!textRender@{textRender}}
+\index{textRender@{textRender}!misc::SdlWrapper@{misc::SdlWrapper}}
+\doxysubsubsection{\texorpdfstring{textRender()}{textRender()}}
+{\footnotesize\ttfamily void misc\+::\+Sdl\+Wrapper\+::text\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+the text\+Render method is a method that render the texts 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/misc/\mbox{\hyperlink{SdlWrapper_8hpp}{Sdl\+Wrapper.\+hpp}}\item 
+src/misc/\mbox{\hyperlink{SdlWrapper_8cpp}{Sdl\+Wrapper.\+cpp}}\end{DoxyCompactItemize}

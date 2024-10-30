@@ -1,0 +1,110 @@
+.TH "core::Core" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+core::Core
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Core\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCore\fP (const std::string &base_lib)"
+.br
+.ti -1c
+.RI "\fB~Core\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateAvailableLibs\fP ()"
+.br
+.RI "The updateAvailableLibs method is a method that will update both game and graphical available libraries\&. "
+.ti -1c
+.RI "void \fBupdateAvailableGraphicalLibs\fP ()"
+.br
+.RI "The updateAvailableGraphicalLibs method is a method that will update available graphical libraries\&. "
+.ti -1c
+.RI "void \fBupdateAvailableGameLibs\fP ()"
+.br
+.RI "The updateAvailableGameLibs method is a method that will update available game libraries\&. "
+.ti -1c
+.RI "void \fBsetGraphicalLib\fP (std::uint64_t lib_number)"
+.br
+.RI "The setGraphicalLib method is a method that will switch the graphical library to the one with the given number (index of a lib in the availableGraphicalLibs)\&. "
+.ti -1c
+.RI "void \fBsetGameLib\fP (std::uint64_t lib_number)"
+.br
+.RI "The setGraphicalLib method is a method that will switch the game library to the one with the given number (index of a lib in the availableGameLibs)\&. "
+.ti -1c
+.RI "void \fBloop\fP ()"
+.br
+.RI "The loop method is the arcade project main loop\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetAvailableGameLibs\fP () const"
+.br
+.RI "Getter for available game libs\&. "
+.ti -1c
+.RI "const std::vector< std::string > & \fBgetAvailableGraphicsLibs\fP () const"
+.br
+.RI "Getter for available graphics libs\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "core::Core::Core (const std::string & base_lib)\fC [explicit]\fP"
+
+.SS "core::Core::~Core ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::vector<std::string>& core::Core::getAvailableGameLibs () const\fC [inline]\fP"
+
+.PP
+Getter for available game libs\&. 
+.SS "const std::vector<std::string>& core::Core::getAvailableGraphicsLibs () const\fC [inline]\fP"
+
+.PP
+Getter for available graphics libs\&. 
+.SS "void core::Core::loop ()"
+
+.PP
+The loop method is the arcade project main loop\&. 
+.SS "void core::Core::setGameLib (std::uint64_t lib_number)"
+
+.PP
+The setGraphicalLib method is a method that will switch the game library to the one with the given number (index of a lib in the availableGameLibs)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlib_number\fP 
+.RE
+.PP
+
+.SS "void core::Core::setGraphicalLib (std::uint64_t lib_number)"
+
+.PP
+The setGraphicalLib method is a method that will switch the graphical library to the one with the given number (index of a lib in the availableGraphicalLibs)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlib_number\fP 
+.RE
+.PP
+
+.SS "void core::Core::updateAvailableGameLibs ()"
+
+.PP
+The updateAvailableGameLibs method is a method that will update available game libraries\&. 
+.SS "void core::Core::updateAvailableGraphicalLibs ()"
+
+.PP
+The updateAvailableGraphicalLibs method is a method that will update available graphical libraries\&. 
+.SS "void core::Core::updateAvailableLibs ()"
+
+.PP
+The updateAvailableLibs method is a method that will update both game and graphical available libraries\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

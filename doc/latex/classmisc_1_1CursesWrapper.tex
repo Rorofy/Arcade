@@ -1,0 +1,167 @@
+\hypertarget{classmisc_1_1CursesWrapper}{}\doxysection{misc\+::Curses\+Wrapper Class Reference}
+\label{classmisc_1_1CursesWrapper}\index{misc::CursesWrapper@{misc::CursesWrapper}}
+
+
+the \mbox{\hyperlink{classmisc_1_1CursesWrapper}{Curses\+Wrapper}} class is an encapsulation of the lib ncurses  
+
+
+
+
+{\ttfamily \#include $<$Curses\+Wrapper.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmisc_1_1CursesWrapper_a7e319ff93cf8cb186731e0937d0b9cec}{Curses\+Wrapper}} ()
+\item 
+\mbox{\hyperlink{classmisc_1_1CursesWrapper_a16406ff3e2cab96c503af66ad1ba73bd}{$\sim$\+Curses\+Wrapper}} ()
+\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_a709bc374ab43c4328798d4258739b7bc}{display\+Char}} (std\+::uint16\+\_\+t color, \mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$ int $>$ term\+Coords, std\+::uint32\+\_\+t term\+Char)
+\begin{DoxyCompactList}\small\item\em The display\+Char method is a method display a character representing a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_a6ea074a034b69385264d1730fb2ad035}{display\+Str}} (std\+::uint16\+\_\+t color, \mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$ int $>$ term\+Coords, const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em The display\+Str method is a method display a string representing a text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_a739b3da0b43957525d96a99d3c981a4d}{wrapper\+Clear}} ()
+\begin{DoxyCompactList}\small\item\em The wrapper\+Clear method is a method that will wrapper\+Clear everything displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_a43dff992c17f4df9f255b9cc468f18b6}{wrapper\+Refresh}} ()
+\begin{DoxyCompactList}\small\item\em The wrapper\+Refresh method is a method that will wrapper\+Refresh, render and display the game. \end{DoxyCompactList}\item 
+int16\+\_\+t \mbox{\hyperlink{classmisc_1_1CursesWrapper_abb06cd8681da73ede494ca4ca4efccb8}{get\+Event}} ()
+\begin{DoxyCompactList}\small\item\em The get\+Event method is a method that will get events from keyboards while in game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_a9e554adf2cfd976f39f37747215427ca}{init\+Color}} (short COLOR, short red, short green, short blue)
+\begin{DoxyCompactList}\small\item\em The init\+Color method is a method that will initialise the color to be displayed afterwards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmisc_1_1CursesWrapper_aa66399ebd879120a8c01496d7083a3f0}{init\+Pair}} (short pair, short color1, short color2)
+\begin{DoxyCompactList}\small\item\em The init\+Pair method is a method that will initialise the pair of color to be displayed afterwards. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the \mbox{\hyperlink{classmisc_1_1CursesWrapper}{Curses\+Wrapper}} class is an encapsulation of the lib ncurses 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a7e319ff93cf8cb186731e0937d0b9cec}\label{classmisc_1_1CursesWrapper_a7e319ff93cf8cb186731e0937d0b9cec}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!CursesWrapper@{CursesWrapper}}
+\index{CursesWrapper@{CursesWrapper}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{CursesWrapper()}{CursesWrapper()}}
+{\footnotesize\ttfamily misc\+::\+Curses\+Wrapper\+::\+Curses\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a16406ff3e2cab96c503af66ad1ba73bd}\label{classmisc_1_1CursesWrapper_a16406ff3e2cab96c503af66ad1ba73bd}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!````~CursesWrapper@{$\sim$CursesWrapper}}
+\index{````~CursesWrapper@{$\sim$CursesWrapper}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{$\sim$CursesWrapper()}{~CursesWrapper()}}
+{\footnotesize\ttfamily misc\+::\+Curses\+Wrapper\+::$\sim$\+Curses\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a709bc374ab43c4328798d4258739b7bc}\label{classmisc_1_1CursesWrapper_a709bc374ab43c4328798d4258739b7bc}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!displayChar@{displayChar}}
+\index{displayChar@{displayChar}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{displayChar()}{displayChar()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::display\+Char (\begin{DoxyParamCaption}\item[{std\+::uint16\+\_\+t}]{color,  }\item[{\mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$ int $>$}]{term\+Coords,  }\item[{std\+::uint32\+\_\+t}]{term\+Char }\end{DoxyParamCaption})}
+
+
+
+The display\+Char method is a method display a character representing a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color is the color of the character that will be displayed \\
+\hline
+{\em term\+Coords} & term\+Coords are the x and y coordinates where the character will be displayed \\
+\hline
+{\em term\+Char} & term\+Char is the character that will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a6ea074a034b69385264d1730fb2ad035}\label{classmisc_1_1CursesWrapper_a6ea074a034b69385264d1730fb2ad035}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!displayStr@{displayStr}}
+\index{displayStr@{displayStr}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{displayStr()}{displayStr()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::display\+Str (\begin{DoxyParamCaption}\item[{std\+::uint16\+\_\+t}]{color,  }\item[{\mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$ int $>$}]{term\+Coords,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+The display\+Str method is a method display a string representing a text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color is the color of the text that will be displayed \\
+\hline
+{\em term\+Coords} & term\+Coords are the x and y coordinates where the text will be displayed \\
+\hline
+{\em text} & term\+Char is the text that will be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_abb06cd8681da73ede494ca4ca4efccb8}\label{classmisc_1_1CursesWrapper_abb06cd8681da73ede494ca4ca4efccb8}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily int16\+\_\+t misc\+::\+Curses\+Wrapper\+::get\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The get\+Event method is a method that will get events from keyboards while in game. 
+
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a9e554adf2cfd976f39f37747215427ca}\label{classmisc_1_1CursesWrapper_a9e554adf2cfd976f39f37747215427ca}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!initColor@{initColor}}
+\index{initColor@{initColor}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{initColor()}{initColor()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::init\+Color (\begin{DoxyParamCaption}\item[{short}]{COLOR,  }\item[{short}]{red,  }\item[{short}]{green,  }\item[{short}]{blue }\end{DoxyParamCaption})}
+
+
+
+The init\+Color method is a method that will initialise the color to be displayed afterwards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em COLOR} & \\
+\hline
+{\em red} & \\
+\hline
+{\em green} & \\
+\hline
+{\em blue} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_aa66399ebd879120a8c01496d7083a3f0}\label{classmisc_1_1CursesWrapper_aa66399ebd879120a8c01496d7083a3f0}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!initPair@{initPair}}
+\index{initPair@{initPair}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{initPair()}{initPair()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::init\+Pair (\begin{DoxyParamCaption}\item[{short}]{pair,  }\item[{short}]{color1,  }\item[{short}]{color2 }\end{DoxyParamCaption})}
+
+
+
+The init\+Pair method is a method that will initialise the pair of color to be displayed afterwards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pair} & \\
+\hline
+{\em color1} & \\
+\hline
+{\em color2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a739b3da0b43957525d96a99d3c981a4d}\label{classmisc_1_1CursesWrapper_a739b3da0b43957525d96a99d3c981a4d}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!wrapperClear@{wrapperClear}}
+\index{wrapperClear@{wrapperClear}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{wrapperClear()}{wrapperClear()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::wrapper\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The wrapper\+Clear method is a method that will wrapper\+Clear everything displayed. 
+
+\mbox{\Hypertarget{classmisc_1_1CursesWrapper_a43dff992c17f4df9f255b9cc468f18b6}\label{classmisc_1_1CursesWrapper_a43dff992c17f4df9f255b9cc468f18b6}} 
+\index{misc::CursesWrapper@{misc::CursesWrapper}!wrapperRefresh@{wrapperRefresh}}
+\index{wrapperRefresh@{wrapperRefresh}!misc::CursesWrapper@{misc::CursesWrapper}}
+\doxysubsubsection{\texorpdfstring{wrapperRefresh()}{wrapperRefresh()}}
+{\footnotesize\ttfamily void misc\+::\+Curses\+Wrapper\+::wrapper\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The wrapper\+Refresh method is a method that will wrapper\+Refresh, render and display the game. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/misc/\mbox{\hyperlink{CursesWrapper_8hpp}{Curses\+Wrapper.\+hpp}}\item 
+src/misc/\mbox{\hyperlink{CursesWrapper_8cpp}{Curses\+Wrapper.\+cpp}}\end{DoxyCompactItemize}

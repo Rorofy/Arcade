@@ -1,0 +1,72 @@
+\hypertarget{classmisc_1_1DLWrapper}{}\doxysection{misc\+::DLWrapper Class Reference}
+\label{classmisc_1_1DLWrapper}\index{misc::DLWrapper@{misc::DLWrapper}}
+
+
+the \mbox{\hyperlink{classmisc_1_1DLWrapper}{DLWrapper}} class is an encapsulation of the libdl  
+
+
+
+
+{\ttfamily \#include $<$DLWrapper.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmisc_1_1DLWrapper_ae38b9b7ba6d173640b87cd347a5edc25}{DLWrapper}} (const std\+::basic\+\_\+string\+\_\+view$<$ char $>$ \&path)
+\item 
+\mbox{\hyperlink{classmisc_1_1DLWrapper_a4e0dc3052455bb63e05997970074d3c1}{$\sim$\+DLWrapper}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::function$<$ T $>$ \mbox{\hyperlink{classmisc_1_1DLWrapper_a42afc53b530c870cf0da09eb0344f0b6}{get\+Symbol}} (const std\+::string \&sym\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the \mbox{\hyperlink{classmisc_1_1DLWrapper}{DLWrapper}} class is an encapsulation of the libdl 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmisc_1_1DLWrapper_ae38b9b7ba6d173640b87cd347a5edc25}\label{classmisc_1_1DLWrapper_ae38b9b7ba6d173640b87cd347a5edc25}} 
+\index{misc::DLWrapper@{misc::DLWrapper}!DLWrapper@{DLWrapper}}
+\index{DLWrapper@{DLWrapper}!misc::DLWrapper@{misc::DLWrapper}}
+\doxysubsubsection{\texorpdfstring{DLWrapper()}{DLWrapper()}}
+{\footnotesize\ttfamily misc\+::\+DLWrapper\+::\+DLWrapper (\begin{DoxyParamCaption}\item[{const std\+::basic\+\_\+string\+\_\+view$<$ char $>$ \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em path} & the path parameter refers to the path to get the lib from binary \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmisc_1_1DLWrapper_a4e0dc3052455bb63e05997970074d3c1}\label{classmisc_1_1DLWrapper_a4e0dc3052455bb63e05997970074d3c1}} 
+\index{misc::DLWrapper@{misc::DLWrapper}!````~DLWrapper@{$\sim$DLWrapper}}
+\index{````~DLWrapper@{$\sim$DLWrapper}!misc::DLWrapper@{misc::DLWrapper}}
+\doxysubsubsection{\texorpdfstring{$\sim$DLWrapper()}{~DLWrapper()}}
+{\footnotesize\ttfamily misc\+::\+DLWrapper\+::$\sim$\+DLWrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmisc_1_1DLWrapper_a42afc53b530c870cf0da09eb0344f0b6}\label{classmisc_1_1DLWrapper_a42afc53b530c870cf0da09eb0344f0b6}} 
+\index{misc::DLWrapper@{misc::DLWrapper}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!misc::DLWrapper@{misc::DLWrapper}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::function$<$T$>$ misc\+::\+DLWrapper\+::get\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sym\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+the get\+Symbol function is a function that allows you to get a symbol from the shared library 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the T template refers to prototype of the function you wanna load \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em sym\+Name} & sym\+Name refers to the symbol name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a std\+::function that contains the pointer to the symbol 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/misc/\mbox{\hyperlink{DLWrapper_8hpp}{DLWrapper.\+hpp}}\item 
+src/misc/\mbox{\hyperlink{DLWrapper_8cpp}{DLWrapper.\+cpp}}\end{DoxyCompactItemize}

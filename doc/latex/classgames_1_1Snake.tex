@@ -1,0 +1,77 @@
+\hypertarget{classgames_1_1Snake}{}\doxysection{games\+::Snake Class Reference}
+\label{classgames_1_1Snake}\index{games::Snake@{games::Snake}}
+
+
+{\ttfamily \#include $<$Snake.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgames_1_1Snake_a6a59f519c0c2604eca2c2f27ddb9d63a}{Snake}} ()=default
+\item 
+\mbox{\hyperlink{classgames_1_1Snake_a35fa2b9afa0179c3386122fff1112ffb}{Snake}} (std\+::uint32\+\_\+t base\+Size, std\+::uint32\+\_\+t x, std\+::uint32\+\_\+t y)
+\item 
+\mbox{\hyperlink{classgames_1_1Snake_af783ef690150c182eef82121ab269bb9}{$\sim$\+Snake}} ()=default
+\item 
+void \mbox{\hyperlink{classgames_1_1Snake_ac0f771d23821a3dd1c70f68e42eb4d08}{increase\+Snake\+Length}} ()
+\item 
+void \mbox{\hyperlink{classgames_1_1Snake_a928dff2ac3da4f661c4158b04c299c29}{update\+Coords}} (\mbox{\hyperlink{namespacegames_ae53d193149c16a5085b7155b12f45623}{games\+::\+Direction}} direction)
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$ std\+::uint32\+\_\+t $>$ $>$ \& \mbox{\hyperlink{classgames_1_1Snake_a8d8f60f6a9fa7881325bcc59b3f648a9}{get\+Coords}} () const
+\item 
+bool \mbox{\hyperlink{classgames_1_1Snake_a413727ecca91d36cd36689e293522b57}{calc\+Collision}} (std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{namespacegames_1_1misc_ad1b5264bc92de4946286d6a97d3d0b18}{games\+::misc\+::\+Nibbler\+Cell}} $>$$>$ \&grid, \mbox{\hyperlink{namespacegames_ae53d193149c16a5085b7155b12f45623}{Direction}} direction) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgames_1_1Snake_a6a59f519c0c2604eca2c2f27ddb9d63a}\label{classgames_1_1Snake_a6a59f519c0c2604eca2c2f27ddb9d63a}} 
+\index{games::Snake@{games::Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily games\+::\+Snake\+::\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classgames_1_1Snake_a35fa2b9afa0179c3386122fff1112ffb}\label{classgames_1_1Snake_a35fa2b9afa0179c3386122fff1112ffb}} 
+\index{games::Snake@{games::Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily games\+::\+Snake\+::\+Snake (\begin{DoxyParamCaption}\item[{std\+::uint32\+\_\+t}]{base\+Size,  }\item[{std\+::uint32\+\_\+t}]{x,  }\item[{std\+::uint32\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgames_1_1Snake_af783ef690150c182eef82121ab269bb9}\label{classgames_1_1Snake_af783ef690150c182eef82121ab269bb9}} 
+\index{games::Snake@{games::Snake}!````~Snake@{$\sim$Snake}}
+\index{````~Snake@{$\sim$Snake}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{$\sim$Snake()}{~Snake()}}
+{\footnotesize\ttfamily games\+::\+Snake\+::$\sim$\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgames_1_1Snake_a413727ecca91d36cd36689e293522b57}\label{classgames_1_1Snake_a413727ecca91d36cd36689e293522b57}} 
+\index{games::Snake@{games::Snake}!calcCollision@{calcCollision}}
+\index{calcCollision@{calcCollision}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{calcCollision()}{calcCollision()}}
+{\footnotesize\ttfamily bool games\+::\+Snake\+::calc\+Collision (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{namespacegames_1_1misc_ad1b5264bc92de4946286d6a97d3d0b18}{games\+::misc\+::\+Nibbler\+Cell}} $>$$>$ \&}]{grid,  }\item[{\mbox{\hyperlink{namespacegames_ae53d193149c16a5085b7155b12f45623}{Direction}}}]{direction }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classgames_1_1Snake_a8d8f60f6a9fa7881325bcc59b3f648a9}\label{classgames_1_1Snake_a8d8f60f6a9fa7881325bcc59b3f648a9}} 
+\index{games::Snake@{games::Snake}!getCoords@{getCoords}}
+\index{getCoords@{getCoords}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{getCoords()}{getCoords()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{structarcade_1_1Coords}{arcade\+::\+Coords}}$<$std\+::uint32\+\_\+t$>$ $>$\& games\+::\+Snake\+::get\+Coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classgames_1_1Snake_ac0f771d23821a3dd1c70f68e42eb4d08}\label{classgames_1_1Snake_ac0f771d23821a3dd1c70f68e42eb4d08}} 
+\index{games::Snake@{games::Snake}!increaseSnakeLength@{increaseSnakeLength}}
+\index{increaseSnakeLength@{increaseSnakeLength}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{increaseSnakeLength()}{increaseSnakeLength()}}
+{\footnotesize\ttfamily void games\+::\+Snake\+::increase\+Snake\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgames_1_1Snake_a928dff2ac3da4f661c4158b04c299c29}\label{classgames_1_1Snake_a928dff2ac3da4f661c4158b04c299c29}} 
+\index{games::Snake@{games::Snake}!updateCoords@{updateCoords}}
+\index{updateCoords@{updateCoords}!games::Snake@{games::Snake}}
+\doxysubsubsection{\texorpdfstring{updateCoords()}{updateCoords()}}
+{\footnotesize\ttfamily void games\+::\+Snake\+::update\+Coords (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacegames_ae53d193149c16a5085b7155b12f45623}{games\+::\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+games/nibbler/include/\mbox{\hyperlink{Snake_8hpp}{Snake.\+hpp}}\item 
+games/nibbler/src/\mbox{\hyperlink{Snake_8cpp}{Snake.\+cpp}}\end{DoxyCompactItemize}

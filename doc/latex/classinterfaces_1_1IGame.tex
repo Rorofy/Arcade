@@ -1,0 +1,82 @@
+\hypertarget{classinterfaces_1_1IGame}{}\doxysection{interfaces\+::IGame Interface Reference}
+\label{classinterfaces_1_1IGame}\index{interfaces::IGame@{interfaces::IGame}}
+
+
+the \mbox{\hyperlink{classinterfaces_1_1IGame}{IGame}} intgerface defines game libraries behavior  
+
+
+
+
+{\ttfamily \#include $<$IGame.\+hpp$>$}
+
+
+
+Inheritance diagram for interfaces\+::IGame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classinterfaces_1_1IGame__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classinterfaces_1_1IGame_af2912424f132332cabc9728749383e21}{$\sim$\+IGame}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}{tick}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events, \mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt)=0
+\item 
+virtual void \mbox{\hyperlink{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}{prepare\+Rendering}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&render\+Queues) const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the \mbox{\hyperlink{classinterfaces_1_1IGame}{IGame}} intgerface defines game libraries behavior 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinterfaces_1_1IGame_af2912424f132332cabc9728749383e21}\label{classinterfaces_1_1IGame_af2912424f132332cabc9728749383e21}} 
+\index{interfaces::IGame@{interfaces::IGame}!````~IGame@{$\sim$IGame}}
+\index{````~IGame@{$\sim$IGame}!interfaces::IGame@{interfaces::IGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGame()}{~IGame()}}
+{\footnotesize\ttfamily interfaces\+::\+IGame\+::$\sim$\+IGame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}\label{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}} 
+\index{interfaces::IGame@{interfaces::IGame}!prepareRendering@{prepareRendering}}
+\index{prepareRendering@{prepareRendering}!interfaces::IGame@{interfaces::IGame}}
+\doxysubsubsection{\texorpdfstring{prepareRendering()}{prepareRendering()}}
+{\footnotesize\ttfamily virtual void interfaces\+::\+IGame\+::prepare\+Rendering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{render\+Queues }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+prepare\+Rendering is a method that will be called every time the game must be rendered 
+\begin{DoxyParams}{Parameters}
+{\em render\+Queues} & render\+Queues refers to a Display\+Protocol that must be filled with data to display on screen \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classgames_1_1SolarFox_a801191f744af6d7026b7c7dcf8eea94f}{games\+::\+Solar\+Fox}}, \mbox{\hyperlink{classgames_1_1Nibbler_a6afcf67cdedca11bcd08ec2e652cc672}{games\+::\+Nibbler}}, and \mbox{\hyperlink{classcore_1_1Greeter_ad1b96bd03ee8cce1bf314bbb148c771e}{core\+::\+Greeter}}.
+
+\mbox{\Hypertarget{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}\label{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}} 
+\index{interfaces::IGame@{interfaces::IGame}!tick@{tick}}
+\index{tick@{tick}!interfaces::IGame@{interfaces::IGame}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily virtual void interfaces\+::\+IGame\+::tick (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events,  }\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+tick is a method that will be called everytime the game logic must be ran 
+\begin{DoxyParams}{Parameters}
+{\em events} & the events param refers to a queue filled with all events captured since last call \\
+\hline
+{\em dt} & The dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classgames_1_1SolarFox_a231ab52e441373c2e32aae0dc0aa2c93}{games\+::\+Solar\+Fox}}, \mbox{\hyperlink{classgames_1_1Nibbler_ae6bd71c54d48b013da2dde0a91f60ad7}{games\+::\+Nibbler}}, and \mbox{\hyperlink{classcore_1_1Greeter_aaacb50f81ae30eeb6d7778135a8d6f86}{core\+::\+Greeter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/interfaces/\mbox{\hyperlink{IGame_8hpp}{IGame.\+hpp}}\end{DoxyCompactItemize}

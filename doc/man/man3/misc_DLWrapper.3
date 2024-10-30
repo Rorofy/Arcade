@@ -1,0 +1,65 @@
+.TH "misc::DLWrapper" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+misc::DLWrapper \- the \fBDLWrapper\fP class is an encapsulation of the libdl  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DLWrapper\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDLWrapper\fP (const std::basic_string_view< char > &path)"
+.br
+.ti -1c
+.RI "\fB~DLWrapper\fP ()"
+.br
+.ti -1c
+.RI "template<typename T > std::function< T > \fBgetSymbol\fP (const std::string &symName)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBDLWrapper\fP class is an encapsulation of the libdl 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "misc::DLWrapper::DLWrapper (const std::basic_string_view< char > & path)\fC [explicit]\fP"
+constructor 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP the path parameter refers to the path to get the lib from binary 
+.RE
+.PP
+
+.SS "misc::DLWrapper::~DLWrapper ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T > std::function<T> misc::DLWrapper::getSymbol (const std::string & symName)\fC [inline]\fP"
+the getSymbol function is a function that allows you to get a symbol from the shared library 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP the T template refers to prototype of the function you wanna load 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIsymName\fP symName refers to the symbol name 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+returns a std::function that contains the pointer to the symbol 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

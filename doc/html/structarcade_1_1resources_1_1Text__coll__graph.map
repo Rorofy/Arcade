@@ -1,0 +1,6 @@
+<map id="arcade::resources::Text" name="arcade::resources::Text">
+<area shape="rect" id="node1" title="the Text struct can be used to represent a text in all modes (sfml, sdl, ncurses, opengl,..." alt="" coords="172,109,331,136"/>
+<area shape="rect" id="node2" href="$classarcade_1_1resources_1_1Color.html" title="The color class allows you to interact with colors." alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node3" href="$structarcade_1_1Coords.html" title=" " alt="" coords="165,13,338,39"/>
+<area shape="rect" id="node4" href="$structarcade_1_1Coords.html" title=" " alt="" coords="362,13,511,39"/>
+</map>

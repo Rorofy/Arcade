@@ -1,0 +1,6 @@
+<map id="interfaces::IGraphical" name="interfaces::IGraphical">
+<area shape="rect" id="node1" title="the IGraphical interface defines graphical libraries behavior" alt="" coords="115,5,262,32"/>
+<area shape="rect" id="node2" href="$classdisplay_1_1Curses.html" title="The Curses class is the IGraphical implementation for ncurses lib." alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$classdisplay_1_1Sdl.html" title="The Sdl class is the IGraphical implementation for SDL2 lib." alt="" coords="143,80,234,107"/>
+<area shape="rect" id="node4" href="$classdisplay_1_1Sfml.html" title="The Curses class is the IGraphical implementation for Sfml lib." alt="" coords="258,80,357,107"/>
+</map>

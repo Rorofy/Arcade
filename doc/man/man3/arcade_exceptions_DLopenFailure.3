@@ -1,0 +1,38 @@
+.TH "arcade::exceptions::DLopenFailure" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arcade::exceptions::DLopenFailure \- The \fBFileNotCompatible\fP class is an exception that will be thrown if dlopen fails\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DLopenFailure\&.hpp>\fP
+.PP
+Inherits std::exception\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDLopenFailure\fP (const std::string &dlerror, const std::string &path, const std::string &mode)"
+.br
+.ti -1c
+.RI "const char * \fBwhat\fP () const noexcept override"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBFileNotCompatible\fP class is an exception that will be thrown if dlopen fails\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "arcade::exceptions::DLopenFailure::DLopenFailure (const std::string & dlerror, const std::string & path, const std::string & mode)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const char* arcade::exceptions::DLopenFailure::what () const\fC [inline]\fP, \fC [override]\fP, \fC [noexcept]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

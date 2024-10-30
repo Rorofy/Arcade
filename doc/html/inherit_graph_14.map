@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classinterfaces_1_1IGraphical.html" title="the IGraphical interface defines graphical libraries behavior" alt="" coords="5,56,152,83"/>
+<area shape="rect" id="node2" href="$classdisplay_1_1Curses.html" title="The Curses class is the IGraphical implementation for ncurses lib." alt="" coords="200,5,313,32"/>
+<area shape="rect" id="node3" href="$classdisplay_1_1Sdl.html" title="The Sdl class is the IGraphical implementation for SDL2 lib." alt="" coords="211,56,302,83"/>
+<area shape="rect" id="node4" href="$classdisplay_1_1Sfml.html" title="The Curses class is the IGraphical implementation for Sfml lib." alt="" coords="207,107,306,133"/>
+</map>

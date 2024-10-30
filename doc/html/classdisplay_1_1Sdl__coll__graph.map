@@ -1,0 +1,4 @@
+<map id="display::Sdl" name="display::Sdl">
+<area shape="rect" id="node1" title="The Sdl class is the IGraphical implementation for SDL2 lib." alt="" coords="33,80,124,107"/>
+<area shape="rect" id="node2" href="$classinterfaces_1_1IGraphical.html" title="the IGraphical interface defines graphical libraries behavior" alt="" coords="5,5,152,32"/>
+</map>

@@ -1,0 +1,234 @@
+.TH "misc::SdlWrapper" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+misc::SdlWrapper \- the \fBSdlWrapper\fP class is an encapsulation of the lib ncurses  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SdlWrapper\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSdlWrapper\fP ()"
+.br
+.ti -1c
+.RI "\fB~SdlWrapper\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSurface\fP (const char *path)"
+.br
+.RI "the setSurface method is a method that sets the private _surface "
+.ti -1c
+.RI "void \fBsetTextSurface\fP (const char *str)"
+.br
+.RI "the setTextSurface method is a method that sets the private _textSurface "
+.ti -1c
+.RI "void \fBsetTexture\fP ()"
+.br
+.RI "the setTexture method is a method that sets the private _texture "
+.ti -1c
+.RI "void \fBsetTextTexture\fP ()"
+.br
+.RI "the setTextTexture method is a method that sets the private _textTexture "
+.ti -1c
+.RI "void \fBsetFont\fP (const char *path, std::uint32_t size)"
+.br
+.RI "the setFont method is a method that sets the private _font "
+.ti -1c
+.RI "void \fBsetSrcRect\fP (int x, int y, int w, int h)"
+.br
+.RI "the setSrcRect method is a method that sets the private _srcRect "
+.ti -1c
+.RI "void \fBsetDstRect\fP (int x, int y, int w, int h)"
+.br
+.RI "the setSrcRect method is a method that sets the private _dstRect "
+.ti -1c
+.RI "void \fBsetColor\fP (std::uint8_t r, std::uint8_t g, std::uint8_t b, std::uint8_t o)"
+.br
+.RI "the setColor method is a method that sets the private _color "
+.ti -1c
+.RI "void \fBqueryTexture\fP (int *texW, int *texH)"
+.br
+.RI "the queryTexture method is a method that call the queryTexture function from SDL "
+.ti -1c
+.RI "void \fBspriteRender\fP ()"
+.br
+.RI "the spriteRender method is a method that render the sprites "
+.ti -1c
+.RI "void \fBtextRender\fP ()"
+.br
+.RI "the textRender method is a method that render the texts "
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.RI "the clear method is a method that clear everything that is displayed "
+.ti -1c
+.RI "void \fBdisplay\fP ()"
+.br
+.RI "the display method is a method that display everything rendered "
+.ti -1c
+.RI "void \fBgetEvents\fP (std::queue< \fBarcade::resources::Keys\fP > &events)"
+.br
+.RI "the getEvents method is a method that get the events from the game "
+.ti -1c
+.RI "SDL_Surface * \fBgetTextSurface\fP ()"
+.br
+.RI "the getTextSurface method is a method that returns the private variable _textSurface "
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBSdlWrapper\fP class is an encapsulation of the lib ncurses 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "misc::SdlWrapper::SdlWrapper ()"
+
+.SS "misc::SdlWrapper::~SdlWrapper ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void misc::SdlWrapper::clear ()"
+
+.PP
+the clear method is a method that clear everything that is displayed 
+.SS "void misc::SdlWrapper::display ()"
+
+.PP
+the display method is a method that display everything rendered 
+.SS "void misc::SdlWrapper::getEvents (std::queue< \fBarcade::resources::Keys\fP > & events)"
+
+.PP
+the getEvents method is a method that get the events from the game 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevents\fP events is a queue of events that are received 
+.RE
+.PP
+
+.SS "SDL_Surface * misc::SdlWrapper::getTextSurface ()"
+
+.PP
+the getTextSurface method is a method that returns the private variable _textSurface 
+.SS "void misc::SdlWrapper::queryTexture (int * texW, int * texH)"
+
+.PP
+the queryTexture method is a method that call the queryTexture function from SDL 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexW\fP texW is the width of the texture 
+.br
+\fItexH\fP texH is the height of the texture 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setColor (std::uint8_t r, std::uint8_t g, std::uint8_t b, std::uint8_t o)"
+
+.PP
+the setColor method is a method that sets the private _color 
+.PP
+\fBParameters\fP
+.RS 4
+\fIr\fP r is the red component of the color 
+.br
+\fIg\fP g is the green component of the color 
+.br
+\fIb\fP b is the blue component of the color 
+.br
+\fIo\fP o is the alpha component, the opacity of the color 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setDstRect (int x, int y, int w, int h)"
+
+.PP
+the setSrcRect method is a method that sets the private _dstRect 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP x is the abscissa of the top left of the rectangle 
+.br
+\fIy\fP y is the ordinate of the top left of the rectangle 
+.br
+\fIw\fP w is the width of the rectangle 
+.br
+\fIh\fP h is the height of the rectangle 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setFont (const char * path, std::uint32_t size)"
+
+.PP
+the setFont method is a method that sets the private _font 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP path is the filepath to the font 
+.br
+\fIsize\fP size is the size of the characters that will be displayed 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setSrcRect (int x, int y, int w, int h)"
+
+.PP
+the setSrcRect method is a method that sets the private _srcRect 
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP x is the abscissa of the top left of the rectangle 
+.br
+\fIy\fP y is the ordinate of the top left of the rectangle 
+.br
+\fIw\fP w is the width of the rectangle 
+.br
+\fIh\fP h is the height of the rectangle 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setSurface (const char * path)"
+
+.PP
+the setSurface method is a method that sets the private _surface 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP path is the filepath of the sprite 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setTextSurface (const char * str)"
+
+.PP
+the setTextSurface method is a method that sets the private _textSurface 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstr\fP str is string of the text 
+.RE
+.PP
+
+.SS "void misc::SdlWrapper::setTextTexture ()"
+
+.PP
+the setTextTexture method is a method that sets the private _textTexture 
+.SS "void misc::SdlWrapper::setTexture ()"
+
+.PP
+the setTexture method is a method that sets the private _texture 
+.SS "void misc::SdlWrapper::spriteRender ()"
+
+.PP
+the spriteRender method is a method that render the sprites 
+.SS "void misc::SdlWrapper::textRender ()"
+
+.PP
+the textRender method is a method that render the texts 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

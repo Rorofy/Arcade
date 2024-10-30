@@ -1,0 +1,75 @@
+.TH "interfaces::IGraphical" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+interfaces::IGraphical \- the \fBIGraphical\fP interface defines graphical libraries behavior  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IGraphical\&.hpp>\fP
+.PP
+Inherited by \fBdisplay::Curses\fP, \fBdisplay::Sdl\fP, and \fBdisplay::Sfml\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fB~IGraphical\fP ()=default"
+.br
+.ti -1c
+.RI "virtual void \fBrender\fP (\fBarcade::protocols::DisplayProtocol\fP &toRender)=0"
+.br
+.ti -1c
+.RI "virtual void \fBcollectEvents\fP (std::queue< \fBarcade::resources::Keys\fP > &events)=0"
+.br
+.ti -1c
+.RI "virtual void \fBupdateTime\fP (\fBarcade::Time\fP &dt)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBIGraphical\fP interface defines graphical libraries behavior 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "virtual interfaces::IGraphical::~IGraphical ()\fC [virtual]\fP, \fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void interfaces::IGraphical::collectEvents (std::queue< \fBarcade::resources::Keys\fP > & events)\fC [pure virtual]\fP"
+collectEvents is a method that will e called each time the events must be collected 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevents\fP The events member refers to a queue of Keys that must be filled with collected events 
+.RE
+.PP
+
+.PP
+Implemented in \fBdisplay::Sfml\fP, \fBdisplay::Sdl\fP, and \fBdisplay::Curses\fP\&.
+.SS "virtual void interfaces::IGraphical::render (\fBarcade::protocols::DisplayProtocol\fP & toRender)\fC [pure virtual]\fP"
+render is a method that will be called each time the window must be refreshed 
+.PP
+\fBParameters\fP
+.RS 4
+\fItoRender\fP The toRender member refers to a DisplayProtocol filled with elements to display 
+.RE
+.PP
+
+.PP
+Implemented in \fBdisplay::Sfml\fP, \fBdisplay::Sdl\fP, and \fBdisplay::Curses\fP\&.
+.SS "virtual void interfaces::IGraphical::updateTime (\fBarcade::Time\fP & dt)\fC [pure virtual]\fP"
+updateTime is a method that will be called each time the time must be updated 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdt\fP the dt parameter represents the deltatime between two functions call 
+.RE
+.PP
+
+.PP
+Implemented in \fBdisplay::Sfml\fP, \fBdisplay::Sdl\fP, and \fBdisplay::Curses\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

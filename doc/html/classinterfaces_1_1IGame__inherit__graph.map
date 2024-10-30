@@ -1,0 +1,6 @@
+<map id="interfaces::IGame" name="interfaces::IGame">
+<area shape="rect" id="node1" title="the IGame intgerface defines game libraries behavior" alt="" coords="121,5,247,32"/>
+<area shape="rect" id="node2" href="$classcore_1_1Greeter.html" title=" " alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$classgames_1_1Nibbler.html" title="The Nibbler class is the IGame implementation for Nibbler game." alt="" coords="129,80,239,107"/>
+<area shape="rect" id="node4" href="$classgames_1_1SolarFox.html" title="The SolarFox class is the IGame implementation for SolarFox game." alt="" coords="263,80,385,107"/>
+</map>

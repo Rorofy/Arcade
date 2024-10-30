@@ -1,0 +1,63 @@
+.TH "interfaces::IGame" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+interfaces::IGame \- the \fBIGame\fP intgerface defines game libraries behavior  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <IGame\&.hpp>\fP
+.PP
+Inherited by \fBcore::Greeter\fP, \fBgames::Nibbler\fP, and \fBgames::SolarFox\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~IGame\fP ()=default"
+.br
+.ti -1c
+.RI "virtual void \fBtick\fP (std::queue< \fBarcade::resources::Keys\fP > &events, \fBarcade::Time\fP &dt)=0"
+.br
+.ti -1c
+.RI "virtual void \fBprepareRendering\fP (\fBarcade::protocols::DisplayProtocol\fP &renderQueues) const =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBIGame\fP intgerface defines game libraries behavior 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "interfaces::IGame::~IGame ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void interfaces::IGame::prepareRendering (\fBarcade::protocols::DisplayProtocol\fP & renderQueues) const\fC [pure virtual]\fP"
+prepareRendering is a method that will be called every time the game must be rendered 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderQueues\fP renderQueues refers to a DisplayProtocol that must be filled with data to display on screen 
+.RE
+.PP
+
+.PP
+Implemented in \fBgames::SolarFox\fP, \fBgames::Nibbler\fP, and \fBcore::Greeter\fP\&.
+.SS "virtual void interfaces::IGame::tick (std::queue< \fBarcade::resources::Keys\fP > & events, \fBarcade::Time\fP & dt)\fC [pure virtual]\fP"
+tick is a method that will be called everytime the game logic must be ran 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevents\fP the events param refers to a queue filled with all events captured since last call 
+.br
+\fIdt\fP The dt parameter represents the deltatime between two functions call 
+.RE
+.PP
+
+.PP
+Implemented in \fBgames::SolarFox\fP, \fBgames::Nibbler\fP, and \fBcore::Greeter\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

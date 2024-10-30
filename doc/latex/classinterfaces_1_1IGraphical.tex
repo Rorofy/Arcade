@@ -1,0 +1,97 @@
+\hypertarget{classinterfaces_1_1IGraphical}{}\doxysection{interfaces\+::IGraphical Interface Reference}
+\label{classinterfaces_1_1IGraphical}\index{interfaces::IGraphical@{interfaces::IGraphical}}
+
+
+the \mbox{\hyperlink{classinterfaces_1_1IGraphical}{IGraphical}} interface defines graphical libraries behavior  
+
+
+
+
+{\ttfamily \#include $<$IGraphical.\+hpp$>$}
+
+
+
+Inheritance diagram for interfaces\+::IGraphical\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classinterfaces_1_1IGraphical__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classinterfaces_1_1IGraphical_a05a7cddf1e423efded6cff2e83e4b86d}{$\sim$\+IGraphical}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classinterfaces_1_1IGraphical_a917b9762dcacbaf4c1a5cf24a9aa4507}{render}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&to\+Render)=0
+\item 
+virtual void \mbox{\hyperlink{classinterfaces_1_1IGraphical_a8cc3c4c96fb33ca3bab797817a007cad}{collect\+Events}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events)=0
+\item 
+virtual void \mbox{\hyperlink{classinterfaces_1_1IGraphical_a87065b31e3c4c3741cdf43af5f84635f}{update\+Time}} (\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the \mbox{\hyperlink{classinterfaces_1_1IGraphical}{IGraphical}} interface defines graphical libraries behavior 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classinterfaces_1_1IGraphical_a05a7cddf1e423efded6cff2e83e4b86d}\label{classinterfaces_1_1IGraphical_a05a7cddf1e423efded6cff2e83e4b86d}} 
+\index{interfaces::IGraphical@{interfaces::IGraphical}!````~IGraphical@{$\sim$IGraphical}}
+\index{````~IGraphical@{$\sim$IGraphical}!interfaces::IGraphical@{interfaces::IGraphical}}
+\doxysubsubsection{\texorpdfstring{$\sim$IGraphical()}{~IGraphical()}}
+{\footnotesize\ttfamily virtual interfaces\+::\+IGraphical\+::$\sim$\+IGraphical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classinterfaces_1_1IGraphical_a8cc3c4c96fb33ca3bab797817a007cad}\label{classinterfaces_1_1IGraphical_a8cc3c4c96fb33ca3bab797817a007cad}} 
+\index{interfaces::IGraphical@{interfaces::IGraphical}!collectEvents@{collectEvents}}
+\index{collectEvents@{collectEvents}!interfaces::IGraphical@{interfaces::IGraphical}}
+\doxysubsubsection{\texorpdfstring{collectEvents()}{collectEvents()}}
+{\footnotesize\ttfamily virtual void interfaces\+::\+IGraphical\+::collect\+Events (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+collect\+Events is a method that will e called each time the events must be collected 
+\begin{DoxyParams}{Parameters}
+{\em events} & The events member refers to a queue of Keys that must be filled with collected events \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classdisplay_1_1Sfml_a28ee6f1dcbc754a1b112d97c48d0d9a7}{display\+::\+Sfml}}, \mbox{\hyperlink{classdisplay_1_1Sdl_a778d289c9a18fd12d0b4915e006be771}{display\+::\+Sdl}}, and \mbox{\hyperlink{classdisplay_1_1Curses_a856c7cc88051a59cf8b9419852b183b2}{display\+::\+Curses}}.
+
+\mbox{\Hypertarget{classinterfaces_1_1IGraphical_a917b9762dcacbaf4c1a5cf24a9aa4507}\label{classinterfaces_1_1IGraphical_a917b9762dcacbaf4c1a5cf24a9aa4507}} 
+\index{interfaces::IGraphical@{interfaces::IGraphical}!render@{render}}
+\index{render@{render}!interfaces::IGraphical@{interfaces::IGraphical}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void interfaces\+::\+IGraphical\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{to\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+render is a method that will be called each time the window must be refreshed 
+\begin{DoxyParams}{Parameters}
+{\em to\+Render} & The to\+Render member refers to a Display\+Protocol filled with elements to display \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classdisplay_1_1Sfml_adaa3a2a756df319893a1c8eff9499340}{display\+::\+Sfml}}, \mbox{\hyperlink{classdisplay_1_1Sdl_a1bc671459595388d852d024155886518}{display\+::\+Sdl}}, and \mbox{\hyperlink{classdisplay_1_1Curses_a933599b4e62938407e7191ddca0ea4a7}{display\+::\+Curses}}.
+
+\mbox{\Hypertarget{classinterfaces_1_1IGraphical_a87065b31e3c4c3741cdf43af5f84635f}\label{classinterfaces_1_1IGraphical_a87065b31e3c4c3741cdf43af5f84635f}} 
+\index{interfaces::IGraphical@{interfaces::IGraphical}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!interfaces::IGraphical@{interfaces::IGraphical}}
+\doxysubsubsection{\texorpdfstring{updateTime()}{updateTime()}}
+{\footnotesize\ttfamily virtual void interfaces\+::\+IGraphical\+::update\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+update\+Time is a method that will be called each time the time must be updated 
+\begin{DoxyParams}{Parameters}
+{\em dt} & the dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classdisplay_1_1Sfml_a193faec9d84043dbab38300b3f117fa1}{display\+::\+Sfml}}, \mbox{\hyperlink{classdisplay_1_1Sdl_ab6d5af276556766e64aeeaed6351d3e3}{display\+::\+Sdl}}, and \mbox{\hyperlink{classdisplay_1_1Curses_a77d49e47fc5ce0c59ba2132980e7d85c}{display\+::\+Curses}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/interfaces/\mbox{\hyperlink{IGraphical_8hpp}{IGraphical.\+hpp}}\end{DoxyCompactItemize}

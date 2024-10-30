@@ -1,0 +1,138 @@
+.TH "misc::CursesWrapper" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+misc::CursesWrapper \- the \fBCursesWrapper\fP class is an encapsulation of the lib ncurses  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CursesWrapper\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCursesWrapper\fP ()"
+.br
+.ti -1c
+.RI "\fB~CursesWrapper\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisplayChar\fP (std::uint16_t color, \fBarcade::Coords\fP< int > termCoords, std::uint32_t termChar)"
+.br
+.RI "The displayChar method is a method display a character representing a sprite\&. "
+.ti -1c
+.RI "void \fBdisplayStr\fP (std::uint16_t color, \fBarcade::Coords\fP< int > termCoords, const std::string &text)"
+.br
+.RI "The displayStr method is a method display a string representing a text\&. "
+.ti -1c
+.RI "void \fBwrapperClear\fP ()"
+.br
+.RI "The wrapperClear method is a method that will wrapperClear everything displayed\&. "
+.ti -1c
+.RI "void \fBwrapperRefresh\fP ()"
+.br
+.RI "The wrapperRefresh method is a method that will wrapperRefresh, render and display the game\&. "
+.ti -1c
+.RI "int16_t \fBgetEvent\fP ()"
+.br
+.RI "The getEvent method is a method that will get events from keyboards while in game\&. "
+.ti -1c
+.RI "void \fBinitColor\fP (short COLOR, short red, short green, short blue)"
+.br
+.RI "The initColor method is a method that will initialise the color to be displayed afterwards\&. "
+.ti -1c
+.RI "void \fBinitPair\fP (short pair, short color1, short color2)"
+.br
+.RI "The initPair method is a method that will initialise the pair of color to be displayed afterwards\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBCursesWrapper\fP class is an encapsulation of the lib ncurses 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "misc::CursesWrapper::CursesWrapper ()"
+
+.SS "misc::CursesWrapper::~CursesWrapper ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void misc::CursesWrapper::displayChar (std::uint16_t color, \fBarcade::Coords\fP< int > termCoords, std::uint32_t termChar)"
+
+.PP
+The displayChar method is a method display a character representing a sprite\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP color is the color of the character that will be displayed 
+.br
+\fItermCoords\fP termCoords are the x and y coordinates where the character will be displayed 
+.br
+\fItermChar\fP termChar is the character that will be displayed 
+.RE
+.PP
+
+.SS "void misc::CursesWrapper::displayStr (std::uint16_t color, \fBarcade::Coords\fP< int > termCoords, const std::string & text)"
+
+.PP
+The displayStr method is a method display a string representing a text\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcolor\fP color is the color of the text that will be displayed 
+.br
+\fItermCoords\fP termCoords are the x and y coordinates where the text will be displayed 
+.br
+\fItext\fP termChar is the text that will be displayed 
+.RE
+.PP
+
+.SS "int16_t misc::CursesWrapper::getEvent ()"
+
+.PP
+The getEvent method is a method that will get events from keyboards while in game\&. 
+.SS "void misc::CursesWrapper::initColor (short COLOR, short red, short green, short blue)"
+
+.PP
+The initColor method is a method that will initialise the color to be displayed afterwards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICOLOR\fP 
+.br
+\fIred\fP 
+.br
+\fIgreen\fP 
+.br
+\fIblue\fP 
+.RE
+.PP
+
+.SS "void misc::CursesWrapper::initPair (short pair, short color1, short color2)"
+
+.PP
+The initPair method is a method that will initialise the pair of color to be displayed afterwards\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpair\fP 
+.br
+\fIcolor1\fP 
+.br
+\fIcolor2\fP 
+.RE
+.PP
+
+.SS "void misc::CursesWrapper::wrapperClear ()"
+
+.PP
+The wrapperClear method is a method that will wrapperClear everything displayed\&. 
+.SS "void misc::CursesWrapper::wrapperRefresh ()"
+
+.PP
+The wrapperRefresh method is a method that will wrapperRefresh, render and display the game\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

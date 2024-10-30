@@ -1,0 +1,79 @@
+.TH "core::Greeter" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+core::Greeter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Greeter\&.hpp>\fP
+.PP
+Inherits \fBinterfaces::IGame\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGreeter\fP (const std::vector< std::string > &availableGamesLibs)"
+.br
+.ti -1c
+.RI "void \fBtick\fP (std::queue< \fBarcade::resources::Keys\fP > &events, \fBarcade::Time\fP &dt) override"
+.br
+.ti -1c
+.RI "void \fBprepareRendering\fP (\fBarcade::protocols::DisplayProtocol\fP &renderQueues) const override"
+.br
+.ti -1c
+.RI "const std::string & \fBgetUsername\fP () const"
+.br
+.ti -1c
+.RI "std::uint32_t \fBgetSelectedGameLibrary\fP () const"
+.br
+.ti -1c
+.RI "bool \fBdone\fP () const"
+.br
+.ti -1c
+.RI "\fB~Greeter\fP ()=default"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "core::Greeter::Greeter (const std::vector< std::string > & availableGamesLibs)"
+
+.SS "core::Greeter::~Greeter ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool core::Greeter::done () const\fC [inline]\fP"
+
+.SS "std::uint32_t core::Greeter::getSelectedGameLibrary () const\fC [inline]\fP"
+
+.SS "const std::string& core::Greeter::getUsername () const\fC [inline]\fP"
+
+.SS "void core::Greeter::prepareRendering (\fBarcade::protocols::DisplayProtocol\fP & renderQueues) const\fC [override]\fP, \fC [virtual]\fP"
+prepareRendering is a method that will be called every time the game must be rendered 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrenderQueues\fP renderQueues refers to a DisplayProtocol that must be filled with data to display on screen 
+.RE
+.PP
+
+.PP
+Implements \fBinterfaces::IGame\fP\&.
+.SS "void core::Greeter::tick (std::queue< \fBarcade::resources::Keys\fP > & events, \fBarcade::Time\fP & dt)\fC [override]\fP, \fC [virtual]\fP"
+tick is a method that will be called everytime the game logic must be ran 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevents\fP the events param refers to a queue filled with all events captured since last call 
+.br
+\fIdt\fP The dt parameter represents the deltatime between two functions call 
+.RE
+.PP
+
+.PP
+Implements \fBinterfaces::IGame\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

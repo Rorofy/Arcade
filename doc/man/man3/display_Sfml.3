@@ -1,0 +1,80 @@
+.TH "display::Sfml" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+display::Sfml \- The \fBCurses\fP class is the IGraphical implementation for \fBSfml\fP lib\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sfml\&.hpp>\fP
+.PP
+Inherits \fBinterfaces::IGraphical\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSfml\fP ()"
+.br
+.ti -1c
+.RI "\fB~Sfml\fP () override"
+.br
+.ti -1c
+.RI "void \fBrender\fP (\fBarcade::protocols::DisplayProtocol\fP &toRender) override"
+.br
+.ti -1c
+.RI "void \fBcollectEvents\fP (std::queue< \fBarcade::resources::Keys\fP > &events) override"
+.br
+.ti -1c
+.RI "void \fBupdateTime\fP (\fBarcade::Time\fP &dt) override"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBCurses\fP class is the IGraphical implementation for \fBSfml\fP lib\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "display::Sfml::Sfml ()"
+
+.SS "display::Sfml::~Sfml ()\fC [override]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void display::Sfml::collectEvents (std::queue< \fBarcade::resources::Keys\fP > & events)\fC [override]\fP, \fC [virtual]\fP"
+collectEvents is a method that will e called each time the events must be collected 
+.PP
+\fBParameters\fP
+.RS 4
+\fIevents\fP The events member refers to a queue of Keys that must be filled with collected events 
+.RE
+.PP
+
+.PP
+Implements \fBinterfaces::IGraphical\fP\&.
+.SS "void display::Sfml::render (\fBarcade::protocols::DisplayProtocol\fP & toRender)\fC [override]\fP, \fC [virtual]\fP"
+render is a method that will be called each time the window must be refreshed 
+.PP
+\fBParameters\fP
+.RS 4
+\fItoRender\fP The toRender member refers to a DisplayProtocol filled with elements to display 
+.RE
+.PP
+
+.PP
+Implements \fBinterfaces::IGraphical\fP\&.
+.SS "void display::Sfml::updateTime (\fBarcade::Time\fP & dt)\fC [override]\fP, \fC [virtual]\fP"
+updateTime is a method that will be called each time the time must be updated 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdt\fP the dt parameter represents the deltatime between two functions call 
+.RE
+.PP
+
+.PP
+Implements \fBinterfaces::IGraphical\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

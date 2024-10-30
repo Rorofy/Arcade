@@ -1,0 +1,57 @@
+.TH "games::Snake" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+games::Snake
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Snake\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSnake\fP ()=default"
+.br
+.ti -1c
+.RI "\fBSnake\fP (std::uint32_t baseSize, std::uint32_t x, std::uint32_t y)"
+.br
+.ti -1c
+.RI "\fB~Snake\fP ()=default"
+.br
+.ti -1c
+.RI "void \fBincreaseSnakeLength\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateCoords\fP (\fBgames::Direction\fP direction)"
+.br
+.ti -1c
+.RI "const std::vector< \fBarcade::Coords\fP< std::uint32_t > > & \fBgetCoords\fP () const"
+.br
+.ti -1c
+.RI "bool \fBcalcCollision\fP (std::vector< std::vector< \fBgames::misc::NibblerCell\fP >> &grid, \fBDirection\fP direction) const"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "games::Snake::Snake ()\fC [default]\fP"
+
+.SS "games::Snake::Snake (std::uint32_t baseSize, std::uint32_t x, std::uint32_t y)"
+
+.SS "games::Snake::~Snake ()\fC [default]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool games::Snake::calcCollision (std::vector< std::vector< \fBgames::misc::NibblerCell\fP >> & grid, \fBDirection\fP direction) const"
+
+.SS "const std::vector<\fBarcade::Coords\fP<std::uint32_t> >& games::Snake::getCoords () const\fC [inline]\fP"
+
+.SS "void games::Snake::increaseSnakeLength ()"
+
+.SS "void games::Snake::updateCoords (\fBgames::Direction\fP direction)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

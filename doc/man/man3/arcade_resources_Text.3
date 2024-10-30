@@ -1,0 +1,54 @@
+.TH "arcade::resources::Text" 3 "Sun Apr 11 2021" "arcade" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arcade::resources::Text \- the \fBText\fP struct can be used to represent a text in all modes (sfml, sdl, ncurses, opengl, etc\&.\&.\&.)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Text\&.hpp>\fP
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBarcade::Coords\fP< double > \fBcoords\fP"
+.br
+.ti -1c
+.RI "\fBarcade::Coords\fP< int > \fBtermCoords\fP"
+.br
+.ti -1c
+.RI "\fBarcade::resources::Color\fP \fBcolor\fP"
+.br
+.ti -1c
+.RI "std::string \fBtext\fP"
+.br
+.ti -1c
+.RI "std::string \fBfontPath\fP"
+.br
+.ti -1c
+.RI "std::uint32_t \fBfontSize\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+the \fBText\fP struct can be used to represent a text in all modes (sfml, sdl, ncurses, opengl, etc\&.\&.\&.) 
+.SH "Member Data Documentation"
+.PP 
+.SS "arcade::resources::Text::color"
+The color member refers to the color of the text 
+.SS "arcade::resources::Text::coords"
+The coords member refers to coordinates on window 
+.SS "arcade::resources::Text::fontPath"
+The fontPath member refers to the font path (useful when in windowed mode) 
+.SS "std::uint32_t arcade::resources::Text::fontSize"
+
+.SS "arcade::resources::Text::termCoords"
+the TermCoords member refers to the coordinates inside terminal 
+.SS "arcade::resources::Text::text"
+The text member refers to the text content 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for arcade from the source code\&.

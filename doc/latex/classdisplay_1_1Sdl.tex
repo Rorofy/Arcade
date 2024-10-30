@@ -1,0 +1,116 @@
+\hypertarget{classdisplay_1_1Sdl}{}\doxysection{display\+::Sdl Class Reference}
+\label{classdisplay_1_1Sdl}\index{display::Sdl@{display::Sdl}}
+
+
+The \mbox{\hyperlink{classdisplay_1_1Sdl}{Sdl}} class is the IGraphical implementation for SDL2 lib.  
+
+
+
+
+{\ttfamily \#include $<$Sdl.\+hpp$>$}
+
+
+
+Inheritance diagram for display\+::Sdl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classdisplay_1_1Sdl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for display\+::Sdl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classdisplay_1_1Sdl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdisplay_1_1Sdl_aeec9d3a36392785125733053c86e4751}{Sdl}} ()
+\item 
+\mbox{\hyperlink{classdisplay_1_1Sdl_a1bf66d07d0c2e791329c97477671a562}{$\sim$\+Sdl}} () override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sdl_a1bc671459595388d852d024155886518}{render}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&to\+Render) override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sdl_a778d289c9a18fd12d0b4915e006be771}{collect\+Events}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events) override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sdl_ab6d5af276556766e64aeeaed6351d3e3}{update\+Time}} (\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classdisplay_1_1Sdl}{Sdl}} class is the IGraphical implementation for SDL2 lib. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdisplay_1_1Sdl_aeec9d3a36392785125733053c86e4751}\label{classdisplay_1_1Sdl_aeec9d3a36392785125733053c86e4751}} 
+\index{display::Sdl@{display::Sdl}!Sdl@{Sdl}}
+\index{Sdl@{Sdl}!display::Sdl@{display::Sdl}}
+\doxysubsubsection{\texorpdfstring{Sdl()}{Sdl()}}
+{\footnotesize\ttfamily display\+::\+Sdl\+::\+Sdl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdisplay_1_1Sdl_a1bf66d07d0c2e791329c97477671a562}\label{classdisplay_1_1Sdl_a1bf66d07d0c2e791329c97477671a562}} 
+\index{display::Sdl@{display::Sdl}!````~Sdl@{$\sim$Sdl}}
+\index{````~Sdl@{$\sim$Sdl}!display::Sdl@{display::Sdl}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sdl()}{~Sdl()}}
+{\footnotesize\ttfamily display\+::\+Sdl\+::$\sim$\+Sdl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdisplay_1_1Sdl_a778d289c9a18fd12d0b4915e006be771}\label{classdisplay_1_1Sdl_a778d289c9a18fd12d0b4915e006be771}} 
+\index{display::Sdl@{display::Sdl}!collectEvents@{collectEvents}}
+\index{collectEvents@{collectEvents}!display::Sdl@{display::Sdl}}
+\doxysubsubsection{\texorpdfstring{collectEvents()}{collectEvents()}}
+{\footnotesize\ttfamily void display\+::\+Sdl\+::collect\+Events (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+collect\+Events is a method that will e called each time the events must be collected 
+\begin{DoxyParams}{Parameters}
+{\em events} & The events member refers to a queue of Keys that must be filled with collected events \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a8cc3c4c96fb33ca3bab797817a007cad}{interfaces\+::\+IGraphical}}.
+
+\mbox{\Hypertarget{classdisplay_1_1Sdl_a1bc671459595388d852d024155886518}\label{classdisplay_1_1Sdl_a1bc671459595388d852d024155886518}} 
+\index{display::Sdl@{display::Sdl}!render@{render}}
+\index{render@{render}!display::Sdl@{display::Sdl}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void display\+::\+Sdl\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{to\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+render is a method that will be called each time the window must be refreshed 
+\begin{DoxyParams}{Parameters}
+{\em to\+Render} & The to\+Render member refers to a Display\+Protocol filled with elements to display \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a917b9762dcacbaf4c1a5cf24a9aa4507}{interfaces\+::\+IGraphical}}.
+
+\mbox{\Hypertarget{classdisplay_1_1Sdl_ab6d5af276556766e64aeeaed6351d3e3}\label{classdisplay_1_1Sdl_ab6d5af276556766e64aeeaed6351d3e3}} 
+\index{display::Sdl@{display::Sdl}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!display::Sdl@{display::Sdl}}
+\doxysubsubsection{\texorpdfstring{updateTime()}{updateTime()}}
+{\footnotesize\ttfamily void display\+::\+Sdl\+::update\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+update\+Time is a method that will be called each time the time must be updated 
+\begin{DoxyParams}{Parameters}
+{\em dt} & the dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a87065b31e3c4c3741cdf43af5f84635f}{interfaces\+::\+IGraphical}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/display/\mbox{\hyperlink{Sdl_8hpp}{Sdl.\+hpp}}\item 
+src/display/sdl/\mbox{\hyperlink{Sdl_8cpp}{Sdl.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{classcore_1_1Greeter}{}\doxysection{core\+::Greeter Class Reference}
+\label{classcore_1_1Greeter}\index{core::Greeter@{core::Greeter}}
+
+
+{\ttfamily \#include $<$Greeter.\+hpp$>$}
+
+
+
+Inheritance diagram for core\+::Greeter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classcore_1_1Greeter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core\+::Greeter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classcore_1_1Greeter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1Greeter_a64aec9e02b656a60997337d0ed74f8a1}{Greeter}} (const std\+::vector$<$ std\+::string $>$ \&available\+Games\+Libs)
+\item 
+void \mbox{\hyperlink{classcore_1_1Greeter_aaacb50f81ae30eeb6d7778135a8d6f86}{tick}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events, \mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt) override
+\item 
+void \mbox{\hyperlink{classcore_1_1Greeter_ad1b96bd03ee8cce1bf314bbb148c771e}{prepare\+Rendering}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&render\+Queues) const override
+\item 
+const std\+::string \& \mbox{\hyperlink{classcore_1_1Greeter_a487c030892ea9078c330ba8233174955}{get\+Username}} () const
+\item 
+std\+::uint32\+\_\+t \mbox{\hyperlink{classcore_1_1Greeter_ac588c965077b69ddb253a7c0835cde0e}{get\+Selected\+Game\+Library}} () const
+\item 
+bool \mbox{\hyperlink{classcore_1_1Greeter_a9bf1b7465d980cd2769eb28a7134cff0}{done}} () const
+\item 
+\mbox{\hyperlink{classcore_1_1Greeter_af7ec009580d410aa30d90878a0e147d6}{$\sim$\+Greeter}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcore_1_1Greeter_a64aec9e02b656a60997337d0ed74f8a1}\label{classcore_1_1Greeter_a64aec9e02b656a60997337d0ed74f8a1}} 
+\index{core::Greeter@{core::Greeter}!Greeter@{Greeter}}
+\index{Greeter@{Greeter}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{Greeter()}{Greeter()}}
+{\footnotesize\ttfamily core\+::\+Greeter\+::\+Greeter (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{available\+Games\+Libs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcore_1_1Greeter_af7ec009580d410aa30d90878a0e147d6}\label{classcore_1_1Greeter_af7ec009580d410aa30d90878a0e147d6}} 
+\index{core::Greeter@{core::Greeter}!````~Greeter@{$\sim$Greeter}}
+\index{````~Greeter@{$\sim$Greeter}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{$\sim$Greeter()}{~Greeter()}}
+{\footnotesize\ttfamily core\+::\+Greeter\+::$\sim$\+Greeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcore_1_1Greeter_a9bf1b7465d980cd2769eb28a7134cff0}\label{classcore_1_1Greeter_a9bf1b7465d980cd2769eb28a7134cff0}} 
+\index{core::Greeter@{core::Greeter}!done@{done}}
+\index{done@{done}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily bool core\+::\+Greeter\+::done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcore_1_1Greeter_ac588c965077b69ddb253a7c0835cde0e}\label{classcore_1_1Greeter_ac588c965077b69ddb253a7c0835cde0e}} 
+\index{core::Greeter@{core::Greeter}!getSelectedGameLibrary@{getSelectedGameLibrary}}
+\index{getSelectedGameLibrary@{getSelectedGameLibrary}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{getSelectedGameLibrary()}{getSelectedGameLibrary()}}
+{\footnotesize\ttfamily std\+::uint32\+\_\+t core\+::\+Greeter\+::get\+Selected\+Game\+Library (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcore_1_1Greeter_a487c030892ea9078c330ba8233174955}\label{classcore_1_1Greeter_a487c030892ea9078c330ba8233174955}} 
+\index{core::Greeter@{core::Greeter}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{getUsername()}{getUsername()}}
+{\footnotesize\ttfamily const std\+::string\& core\+::\+Greeter\+::get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcore_1_1Greeter_ad1b96bd03ee8cce1bf314bbb148c771e}\label{classcore_1_1Greeter_ad1b96bd03ee8cce1bf314bbb148c771e}} 
+\index{core::Greeter@{core::Greeter}!prepareRendering@{prepareRendering}}
+\index{prepareRendering@{prepareRendering}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{prepareRendering()}{prepareRendering()}}
+{\footnotesize\ttfamily void core\+::\+Greeter\+::prepare\+Rendering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{render\+Queues }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+prepare\+Rendering is a method that will be called every time the game must be rendered 
+\begin{DoxyParams}{Parameters}
+{\em render\+Queues} & render\+Queues refers to a Display\+Protocol that must be filled with data to display on screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}{interfaces\+::\+IGame}}.
+
+\mbox{\Hypertarget{classcore_1_1Greeter_aaacb50f81ae30eeb6d7778135a8d6f86}\label{classcore_1_1Greeter_aaacb50f81ae30eeb6d7778135a8d6f86}} 
+\index{core::Greeter@{core::Greeter}!tick@{tick}}
+\index{tick@{tick}!core::Greeter@{core::Greeter}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void core\+::\+Greeter\+::tick (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events,  }\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+tick is a method that will be called everytime the game logic must be ran 
+\begin{DoxyParams}{Parameters}
+{\em events} & the events param refers to a queue filled with all events captured since last call \\
+\hline
+{\em dt} & The dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}{interfaces\+::\+IGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+core/include/\mbox{\hyperlink{Greeter_8hpp}{Greeter.\+hpp}}\item 
+core/src/\mbox{\hyperlink{Greeter_8cpp}{Greeter.\+cpp}}\end{DoxyCompactItemize}

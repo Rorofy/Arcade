@@ -1,0 +1,116 @@
+\hypertarget{classdisplay_1_1Sfml}{}\doxysection{display\+::Sfml Class Reference}
+\label{classdisplay_1_1Sfml}\index{display::Sfml@{display::Sfml}}
+
+
+The \mbox{\hyperlink{classdisplay_1_1Curses}{Curses}} class is the IGraphical implementation for \mbox{\hyperlink{classdisplay_1_1Sfml}{Sfml}} lib.  
+
+
+
+
+{\ttfamily \#include $<$Sfml.\+hpp$>$}
+
+
+
+Inheritance diagram for display\+::Sfml\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classdisplay_1_1Sfml__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for display\+::Sfml\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classdisplay_1_1Sfml__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdisplay_1_1Sfml_af5ca52e88835310c44f923c0c2899d94}{Sfml}} ()
+\item 
+\mbox{\hyperlink{classdisplay_1_1Sfml_a7f184082e8639171c9bf8b1f6e1c30bb}{$\sim$\+Sfml}} () override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sfml_adaa3a2a756df319893a1c8eff9499340}{render}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&to\+Render) override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sfml_a28ee6f1dcbc754a1b112d97c48d0d9a7}{collect\+Events}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events) override
+\item 
+void \mbox{\hyperlink{classdisplay_1_1Sfml_a193faec9d84043dbab38300b3f117fa1}{update\+Time}} (\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classdisplay_1_1Curses}{Curses}} class is the IGraphical implementation for \mbox{\hyperlink{classdisplay_1_1Sfml}{Sfml}} lib. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdisplay_1_1Sfml_af5ca52e88835310c44f923c0c2899d94}\label{classdisplay_1_1Sfml_af5ca52e88835310c44f923c0c2899d94}} 
+\index{display::Sfml@{display::Sfml}!Sfml@{Sfml}}
+\index{Sfml@{Sfml}!display::Sfml@{display::Sfml}}
+\doxysubsubsection{\texorpdfstring{Sfml()}{Sfml()}}
+{\footnotesize\ttfamily display\+::\+Sfml\+::\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdisplay_1_1Sfml_a7f184082e8639171c9bf8b1f6e1c30bb}\label{classdisplay_1_1Sfml_a7f184082e8639171c9bf8b1f6e1c30bb}} 
+\index{display::Sfml@{display::Sfml}!````~Sfml@{$\sim$Sfml}}
+\index{````~Sfml@{$\sim$Sfml}!display::Sfml@{display::Sfml}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sfml()}{~Sfml()}}
+{\footnotesize\ttfamily display\+::\+Sfml\+::$\sim$\+Sfml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdisplay_1_1Sfml_a28ee6f1dcbc754a1b112d97c48d0d9a7}\label{classdisplay_1_1Sfml_a28ee6f1dcbc754a1b112d97c48d0d9a7}} 
+\index{display::Sfml@{display::Sfml}!collectEvents@{collectEvents}}
+\index{collectEvents@{collectEvents}!display::Sfml@{display::Sfml}}
+\doxysubsubsection{\texorpdfstring{collectEvents()}{collectEvents()}}
+{\footnotesize\ttfamily void display\+::\+Sfml\+::collect\+Events (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+collect\+Events is a method that will e called each time the events must be collected 
+\begin{DoxyParams}{Parameters}
+{\em events} & The events member refers to a queue of Keys that must be filled with collected events \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a8cc3c4c96fb33ca3bab797817a007cad}{interfaces\+::\+IGraphical}}.
+
+\mbox{\Hypertarget{classdisplay_1_1Sfml_adaa3a2a756df319893a1c8eff9499340}\label{classdisplay_1_1Sfml_adaa3a2a756df319893a1c8eff9499340}} 
+\index{display::Sfml@{display::Sfml}!render@{render}}
+\index{render@{render}!display::Sfml@{display::Sfml}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void display\+::\+Sfml\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{to\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+render is a method that will be called each time the window must be refreshed 
+\begin{DoxyParams}{Parameters}
+{\em to\+Render} & The to\+Render member refers to a Display\+Protocol filled with elements to display \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a917b9762dcacbaf4c1a5cf24a9aa4507}{interfaces\+::\+IGraphical}}.
+
+\mbox{\Hypertarget{classdisplay_1_1Sfml_a193faec9d84043dbab38300b3f117fa1}\label{classdisplay_1_1Sfml_a193faec9d84043dbab38300b3f117fa1}} 
+\index{display::Sfml@{display::Sfml}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!display::Sfml@{display::Sfml}}
+\doxysubsubsection{\texorpdfstring{updateTime()}{updateTime()}}
+{\footnotesize\ttfamily void display\+::\+Sfml\+::update\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+update\+Time is a method that will be called each time the time must be updated 
+\begin{DoxyParams}{Parameters}
+{\em dt} & the dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGraphical_a87065b31e3c4c3741cdf43af5f84635f}{interfaces\+::\+IGraphical}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/display/\mbox{\hyperlink{Sfml_8hpp}{Sfml.\+hpp}}\item 
+src/display/sfml/\mbox{\hyperlink{Sfml_8cpp}{Sfml.\+cpp}}\end{DoxyCompactItemize}

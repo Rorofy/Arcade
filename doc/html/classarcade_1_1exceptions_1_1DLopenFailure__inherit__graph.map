@@ -1,0 +1,4 @@
+<map id="arcade::exceptions::DLopenFailure" name="arcade::exceptions::DLopenFailure">
+<area shape="rect" id="node1" title="The FileNotCompatible class is an exception that will be thrown if dlopen fails." alt="" coords="5,80,137,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="19,5,123,32"/>
+</map>

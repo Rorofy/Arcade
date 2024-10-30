@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['g_83',['G',['../namespacearcade_1_1resources.html#a58b995ece6fbda3c7c584c25957aab0ba17265df5aa8e668276e546118df34065',1,'arcade::resources']]],
+  ['games_84',['Games',['../namespaceGames.html',1,'']]],
+  ['games_85',['games',['../namespacegames.html',1,'']]],
+  ['getavailablegamelibs_86',['getAvailableGameLibs',['../classcore_1_1Core.html#a94c83da95ff96892723a97fa03beea25',1,'core::Core']]],
+  ['getavailablegraphicslibs_87',['getAvailableGraphicsLibs',['../classcore_1_1Core.html#adc36cdad0034b590f88b4f8d3193b8f2',1,'core::Core']]],
+  ['getblue_88',['getBlue',['../classarcade_1_1resources_1_1Color.html#ae861744947627c02472f571684bf99a6',1,'arcade::resources::Color']]],
+  ['getcoords_89',['getCoords',['../classgames_1_1Snake.html#a8d8f60f6a9fa7881325bcc59b3f648a9',1,'games::Snake']]],
+  ['getevent_90',['getEvent',['../classmisc_1_1CursesWrapper.html#abb06cd8681da73ede494ca4ca4efccb8',1,'misc::CursesWrapper']]],
+  ['getevents_91',['getEvents',['../classmisc_1_1SdlWrapper.html#ae53cc97ca505343776388e907839b8b0',1,'misc::SdlWrapper']]],
+  ['getgreen_92',['getGreen',['../classarcade_1_1resources_1_1Color.html#ae29e65d7727acc12149ddd2bd9967a72',1,'arcade::resources::Color']]],
+  ['getopacity_93',['getOpacity',['../classarcade_1_1resources_1_1Color.html#a47c157c9d28710480785d5f86124123b',1,'arcade::resources::Color']]],
+  ['getred_94',['getRed',['../classarcade_1_1resources_1_1Color.html#abd88be3cc29cfc2e4d4e9ed033dbbb04',1,'arcade::resources::Color']]],
+  ['getselectedgamelibrary_95',['getSelectedGameLibrary',['../classcore_1_1Greeter.html#ac588c965077b69ddb253a7c0835cde0e',1,'core::Greeter']]],
+  ['getsymbol_96',['getSymbol',['../classmisc_1_1DLWrapper.html#a42afc53b530c870cf0da09eb0344f0b6',1,'misc::DLWrapper']]],
+  ['gettextsurface_97',['getTextSurface',['../classmisc_1_1SdlWrapper.html#aa9ee98bdcc4f2926314f1bbdff24c3d3',1,'misc::SdlWrapper']]],
+  ['gettype_98',['getType',['../games_2nibbler_2main_8cpp.html#ac9d68bd9b4bb538d092497a5a551c42e',1,'getType():&#160;main.cpp'],['../games_2solarfox_2main_8cpp.html#ac9d68bd9b4bb538d092497a5a551c42e',1,'getType():&#160;main.cpp'],['../src_2display_2curses_2main_8cpp.html#ac9d68bd9b4bb538d092497a5a551c42e',1,'getType():&#160;main.cpp'],['../src_2display_2sdl_2main_8cpp.html#ac9d68bd9b4bb538d092497a5a551c42e',1,'getType():&#160;main.cpp'],['../src_2display_2sfml_2main_8cpp.html#ac9d68bd9b4bb538d092497a5a551c42e',1,'getType():&#160;main.cpp']]],
+  ['getusername_99',['getUsername',['../classcore_1_1Greeter.html#a487c030892ea9078c330ba8233174955',1,'core::Greeter']]],
+  ['greeter_100',['Greeter',['../classcore_1_1Greeter.html',1,'core::Greeter'],['../classcore_1_1Greeter.html#a64aec9e02b656a60997337d0ed74f8a1',1,'core::Greeter::Greeter()']]],
+  ['greeter_2ecpp_101',['Greeter.cpp',['../Greeter_8cpp.html',1,'']]],
+  ['greeter_2ehpp_102',['Greeter.hpp',['../Greeter_8hpp.html',1,'']]],
+  ['misc_103',['misc',['../namespacegames_1_1misc.html',1,'games']]]
+];

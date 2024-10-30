@@ -1,0 +1,101 @@
+\hypertarget{classgames_1_1SolarFox}{}\doxysection{games\+::Solar\+Fox Class Reference}
+\label{classgames_1_1SolarFox}\index{games::SolarFox@{games::SolarFox}}
+
+
+The \mbox{\hyperlink{classgames_1_1SolarFox}{Solar\+Fox}} class is the IGame implementation for \mbox{\hyperlink{classgames_1_1SolarFox}{Solar\+Fox}} game.  
+
+
+
+
+{\ttfamily \#include $<$Solar\+Fox.\+hpp$>$}
+
+
+
+Inheritance diagram for games\+::Solar\+Fox\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classgames_1_1SolarFox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for games\+::Solar\+Fox\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classgames_1_1SolarFox__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgames_1_1SolarFox_a09ca78e289346a1cf54c19d355ad41f7}{Solar\+Fox}} (const std\+::string \&username)
+\item 
+\mbox{\hyperlink{classgames_1_1SolarFox_ab006253cfd04278c326a6d52454a0b6b}{$\sim$\+Solar\+Fox}} ()=default
+\item 
+void \mbox{\hyperlink{classgames_1_1SolarFox_a231ab52e441373c2e32aae0dc0aa2c93}{tick}} (std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&events, \mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&dt) override
+\item 
+void \mbox{\hyperlink{classgames_1_1SolarFox_a801191f744af6d7026b7c7dcf8eea94f}{prepare\+Rendering}} (\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&render\+Queues) const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classgames_1_1SolarFox}{Solar\+Fox}} class is the IGame implementation for \mbox{\hyperlink{classgames_1_1SolarFox}{Solar\+Fox}} game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgames_1_1SolarFox_a09ca78e289346a1cf54c19d355ad41f7}\label{classgames_1_1SolarFox_a09ca78e289346a1cf54c19d355ad41f7}} 
+\index{games::SolarFox@{games::SolarFox}!SolarFox@{SolarFox}}
+\index{SolarFox@{SolarFox}!games::SolarFox@{games::SolarFox}}
+\doxysubsubsection{\texorpdfstring{SolarFox()}{SolarFox()}}
+{\footnotesize\ttfamily games\+::\+Solar\+Fox\+::\+Solar\+Fox (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgames_1_1SolarFox_ab006253cfd04278c326a6d52454a0b6b}\label{classgames_1_1SolarFox_ab006253cfd04278c326a6d52454a0b6b}} 
+\index{games::SolarFox@{games::SolarFox}!````~SolarFox@{$\sim$SolarFox}}
+\index{````~SolarFox@{$\sim$SolarFox}!games::SolarFox@{games::SolarFox}}
+\doxysubsubsection{\texorpdfstring{$\sim$SolarFox()}{~SolarFox()}}
+{\footnotesize\ttfamily games\+::\+Solar\+Fox\+::$\sim$\+Solar\+Fox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgames_1_1SolarFox_a801191f744af6d7026b7c7dcf8eea94f}\label{classgames_1_1SolarFox_a801191f744af6d7026b7c7dcf8eea94f}} 
+\index{games::SolarFox@{games::SolarFox}!prepareRendering@{prepareRendering}}
+\index{prepareRendering@{prepareRendering}!games::SolarFox@{games::SolarFox}}
+\doxysubsubsection{\texorpdfstring{prepareRendering()}{prepareRendering()}}
+{\footnotesize\ttfamily void games\+::\+Solar\+Fox\+::prepare\+Rendering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1protocols_1_1DisplayProtocol}{arcade\+::protocols\+::\+Display\+Protocol}} \&}]{render\+Queues }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+prepare\+Rendering is a method that will be called every time the game must be rendered 
+\begin{DoxyParams}{Parameters}
+{\em render\+Queues} & render\+Queues refers to a Display\+Protocol that must be filled with data to display on screen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_aadd0fb37e59ecc98bdc8cce51369a644}{interfaces\+::\+IGame}}.
+
+\mbox{\Hypertarget{classgames_1_1SolarFox_a231ab52e441373c2e32aae0dc0aa2c93}\label{classgames_1_1SolarFox_a231ab52e441373c2e32aae0dc0aa2c93}} 
+\index{games::SolarFox@{games::SolarFox}!tick@{tick}}
+\index{tick@{tick}!games::SolarFox@{games::SolarFox}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily void games\+::\+Solar\+Fox\+::tick (\begin{DoxyParamCaption}\item[{std\+::queue$<$ \mbox{\hyperlink{namespacearcade_1_1resources_a58b995ece6fbda3c7c584c25957aab0b}{arcade\+::resources\+::\+Keys}} $>$ \&}]{events,  }\item[{\mbox{\hyperlink{namespacearcade_a72bd97963e71d8b6fcbcb2f9e56d07ad}{arcade\+::\+Time}} \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+tick is a method that will be called everytime the game logic must be ran 
+\begin{DoxyParams}{Parameters}
+{\em events} & the events param refers to a queue filled with all events captured since last call \\
+\hline
+{\em dt} & The dt parameter represents the deltatime between two functions call \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classinterfaces_1_1IGame_a1ba1527a04714ab5f6bdaf6142d4e126}{interfaces\+::\+IGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+games/solarfox/include/\mbox{\hyperlink{SolarFox_8hpp}{Solar\+Fox.\+hpp}}\item 
+games/solarfox/src/\mbox{\hyperlink{SolarFox_8cpp}{Solar\+Fox.\+cpp}}\end{DoxyCompactItemize}
